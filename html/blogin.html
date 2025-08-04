@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
+
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>Blog Single</title>
+    <link href="../css/navfoot.css" rel="stylesheet">
+    <link href="../css/blog.css" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&family=Roboto:ital,wght@0,400;0,500;0,700;1,400;1,700&family=Ubuntu:ital,wght@0,400;0,500;0,700;1,400;1,700&display=swap"
+        rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet" />
+</head>
+
+<body>
+    <div class="background_picture_color">
+        <div class="content_background_picture">
+            <div class="container">
+                <div class="nav">
+                    <div class="navigation_logo">
+                        <img src="../images/logo.png" alt="" />
+                    </div>
+                    <div class="navigation_bar">
+                        <ul class="main_menu" id="nav_bar_btn">
+                            <li class="drop_down">
+                                <a href="javascript:void(0)" class="d_list" onclick="navmenuhome()">Home <span
+                                        class="down_arrow">
+                                        <i class="fa-solid fa-angle-down"></i></span>
+                                </a>
+                                <ul class="drop_down_content" id="ddlist1">
+                                    <ul>
+                                        <li>
+                                            <a href="javascript:void(0)">Home 01</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0)">Home 02</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0)">Home 03</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0)">Home 04</a>
+                                        </li>
+                                        <li>
+                                            <a href="../html/conferencepage.html">Home 05</a>
+                                        </li>
+                                    </ul>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)" class="d_list">Aboute Us</a>
+                            </li>
+                            <li class="drop_down">
+                                <a href="javascript:void(0)" class="d_list" onclick="navmenupages()">Pages<span
+                                        class="down_arrow">
+                                        <i class="fa-solid fa-angle-down"></i></span>
+                                </a>
+                                <ul class="drop_down_content" id="ddlist2">
+                                    <ul>
+                                        <li>
+                                            <a href="#">Speaker 1</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0)">Speaker 2</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0)">Speaker 3</a>
+                                        </li>
+                                        <li>
+                                            <a
+                                                href="#">SpeakerSingle</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0)">Event List</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0)">Event Schedule</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0)">Event Single</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0)">Login & Register </a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0)">Gallery</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0)">Pricing</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0)">FQA'S</a>
+                                        </li>
+                                    </ul>
+                                </ul>
+                            </li>
+                            <li class="drop_down">
+                                <a href="javascript:void(0)" class="d_list" onclick="navmenublog()">Blog <span
+                                        class="down_arrow">
+                                        <i class="fa-solid fa-angle-down"></i></span>
+                                </a>
+                                <ul class="drop_down_content" id="ddlist3">
+                                    <li>
+                                        <a href="../html/blog.html">Blog List</a>
+                                    </li>
+                                    <li>
+                                        <a href="blogin.html">Blogs Details</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)" class="d_list">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="nav_logo">
+                        <button class="search_logo">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </button>
+                        <button class="buy_logo"><i class="fa-solid fa-cart-shopping"></i>
+                            <span class="notification">0</span>
+                        </button>
+                        <button class="buy_ticket_now">Buy Ticket Now</button>
+                        <ul class="bg-bar">
+                            <li><button type="button" class="bg-menu-nav" onclick="navigationmenu()">
+                                    <i class="fa-solid fa-bars"></i>
+                                </button>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="header_bg_image">
+                <img src="../images/hero_shape1.png" class="shape_1 image-fluid" alt="" />
+                <img src="../images/hero_shape_2_navbar.png.png" class="shape_2 image-fluid" alt="" />
+            </div>
+            <div class="header">
+                <div class="header_content">
+                    <div class="page_title">
+                        <h1>Blog</h1>
+                    </div>
+                    <div class="page_navigation">
+                        <nav aria-label="bradcrub">
+                            <ol class="bradcrub">
+                                <li class="bradcrub-items">
+                                    <a href="javascript:void(0)">Home</a>
+                                </li>
+                                <span class="dess_arrow">/</span>
+                                <li class="bradcrub-items">
+                                    <a href="javascript:void(0)">Blog</a>
+                                </li>
+                            </ol>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="single-blog-page">
+        <div class="container">
+            <div class="flex-box">
+                <div class="left_rows">
+                    <div class="single-blog-section-1">
+                        <div class="blog-header-section-1.1">
+                            <div class="blog-header-images">
+                                <img alt="" class="blog-header-image-picture" src="../images/blog-header-image.jpg" />
+                            </div>
+                            <h4 class="blog-events-date">
+                                <span class="date-event-months">Aug</span>
+                                <span class="blog-event-year">2022</span>
+                            </h4>
+                        </div>
+                        <div class="blog-body-section-1.2">
+                            <div class="blogs-details">
+                                <a class="user-info" href="javascript:void(0)"><i class="fa-solid fa-user"></i>Adam
+                                    Hirachin</a>
+                                <a class="user-comments" href="javascript:void(0)"><i
+                                        class="fa-solid fa-calendar-days"></i>3
+                                    comments</a>
+                            </div>
+                            <div class="blogs-body-title">
+                                <h4 class="blogs-title">Paris blockchain summit new slogan</h4>
+                            </div>
+                            <div class="blogs-content-body">
+                                <p>We’re inviting the top creatives in the tech industry from all over the world to
+                                    come
+                                    learn, grow, scrape their knees, especially for the companies scaling out their
+                                    sales operations. That’s why Attentive was born in 2015.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="single-blog-section-1">
+                        <div class="blog-header-section-1.1">
+                            <div class="blog-header-images">
+                                <img alt="" class="blog-header-image-picture" src="../images/blog_img_2.jpg" />
+                            </div>
+                            <h4 class="blog-events-date-2">
+                                <span class="date-event-months-2">Aug</span>
+                                <span class="blog-event-year-2">2022</span>
+                            </h4>
+                        </div>
+                        <div class="blog-body-section-1.2">
+                            <div class="blogs-details">
+                                <a class="user-info" href="javascript:void(0)"><i class="fa-solid fa-user"></i>Adam
+                                    Hirachin</a>
+                                <a class="user-comments" href="javascript:void(0)"><i
+                                        class="fa-solid fa-calendar-days"></i>3
+                                    comments</a>
+                            </div>
+                            <div class="blogs-body-title">
+                                <h4 class="blogs-title">Paris blockchain summit new slogan</h4>
+                            </div>
+                            <div class="blogs-content-body">
+                                <p>We’re inviting the top creatives in the tech industry from all over the world to
+                                    come
+                                    learn, grow, scrape their knees, especially for the companies scaling out their
+                                    sales operations. That’s why Attentive was born in 2015.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="single-blog-section-1">
+                        <div class="blog-header-section-1.1">
+                            <div class="blog-header-images">
+                                <img alt="" class="blog-header-image-picture" src="../images/blog_img_3.jpg" />
+                            </div>
+                            <h4 class="blog-events-date-3">
+                                <span class="date-event-months-3">Aug</span>
+                                <span class="blog-event-year-3">2022</span>
+                            </h4>
+                        </div>
+                        <div class="blog-body-section-1.2">
+                            <div class="blogs-details">
+                                <a class="user-info" href="javascript:void(0)"><i class="fa-solid fa-user"></i>Adam
+                                    Hirachin</a>
+                                <a class="user-comments" href="javascript:void(0)"><i
+                                        class="fa-solid fa-calendar-days"></i>3
+                                    comments</a>
+                            </div>
+                            <div class="blogs-body-title">
+                                <h4 class="blogs-title">Paris blockchain summit new slogan</h4>
+                            </div>
+                            <div class="blogs-content-body">
+                                <p>We’re inviting the top creatives in the tech industry from all over the world to
+                                    come
+                                    learn, grow, scrape their knees, especially for the companies scaling out their
+                                    sales operations. That’s why Attentive was born in 2015.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="Pagination">
+                        <u class="FLEX">
+                            <div class="left-icons">
+                                <li class="l-i"><a href=""><i class="fa-solid fa-angles-left"></i></a></li>
+                            </div>
+                            <div class="first-page">
+                                <li class="f-p"><a href="">1</a></li>
+                            </div>
+                            <div class="second-page">
+                                <li class="s-p"><a href="">2</a></li>
+                            </div>
+                            <div class="right-icons">
+                                <li class="l-i"><a href=""><i class="fa-solid fa-angles-right"></i></a></li>
+                            </div>
+                        </u>
+                    </div>
+                </div>
+                <div class="blog-sidebar-right-rows-section-1">
+                    <div class="blog-search-bar-section-1.1">
+                        <label>
+                            <input class="blog-sidebar-search-box" placeholder="Search" type="text">
+                        </label>
+                        <button class="blogs-search-icons">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </button>
+                    </div>
+                    <div class="blog-list-categories-section-1.2">
+                        <div class="blog-list-of-categoies-title">
+                            <h4>Categories</h4>
+                        </div>
+                        <ul class="blog-list-of-categories">
+                            <li class="blog-list-of-categories-items">
+                                <a class="icons" href="javascript:void(0)"><i
+                                        class="fa-solid fa-chevron-right"></i>industry</a>
+                                <span class="post-count">(11)</span>
+                            </li>
+                            <li class="blog-list-of-categories-items">
+                                <a class="icons" href="javascript:void(0)"><i
+                                        class="fa-solid fa-chevron-right"></i>Business</a>
+                                <span class="post-count">(02)</span>
+                            </li>
+                            <li class="blog-list-of-categories-items">
+                                <a class="icons" href="javascript:void(0)"><i
+                                        class="fa-solid fa-chevron-right"></i>Construc</a>
+                                <span class="post-count">(0)</span>
+                            </li>
+                            <li class="blog-list-of-categories-items">
+                                <a class="icons" href="javascript:void(0)"><i
+                                        class="fa-solid fa-chevron-right"></i>Factory</a>
+                                <span class="post-count">(231)</span>
+                            </li>
+                            <li class="blog-list-of-categories-items">
+                                <a class="icons" href="javascript:void(0)"><i
+                                        class="fa-solid fa-chevron-right"></i>Estate</a>
+                                <span class="post-count">(45)</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="blog-sidebar-visit-ticket-box">
+                        <div ; class="blog-sidebar-visit-ticket-box-color-bg"
+                            style="background-image:url(../images/blog-visit-ticket-box-background-image.jpg)">
+                            <div class="blog-sidebar-popular-post">
+                                <h3 class="user-offer">40% ff</h3>
+                                <h3 class="offer-title">Book your seat now</h3>
+                                <a class="blog-visit-ticket-submit-button" href="javascript:void(0)">Get ticket now</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="blog-sidebar-popular-post">
+                        <div class="blog-popular-post-title">
+                            <h4>Popular Posts</h4>
+                        </div>
+                        <div class="popular-post">
+                            <ul>
+                                <li>
+                                    <a class="blog-sidebar-popular-post-links-1" href="javascript:void(0)">
+                                        <div class="blog-popular-post-image">
+                                            <img alt="" src="../images/blog-popular-post-image-3.jpg" />
+                                        </div>
+                                        <div class="blog-popular-post-text">
+                                            <h4 class="blog-popular-post-text-title">Cupidatat non proident sunt
+                                                culpa officia</h4>
+                                            <span class="blog-popular-post-text-icon&date"><i
+                                                    class="fa-regular fa-calendar-days"></i>Oct 09, 2021</span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="blog-sidebar-popular-post-links-2" href="javascript:void(0)">
+                                        <div class="blog-popular-post-image">
+                                            <img alt="" src="../images/blog-popular-post-image.jpg" />
+                                        </div>
+                                        <div class="blog-popular-post-text">
+                                            <h4 class="blog-popular-post-text-title">Cupidatat non proident sunt
+                                                culpa officia</h4>
+                                            <span class="blog-popular-post-text-icon&date"><i
+                                                    class="fa-regular fa-calendar-days"></i>Oct 09, 2021</span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="blog-sidebar-popular-post-links-2" href="javascript:void(0)">
+                                        <div class="blog-popular-post-image">
+                                            <img alt="" src="../images/blog-popular-post-image-2.jpg" />
+                                        </div>
+                                        <div class="blog-popular-post-text">
+                                            <h4 class="blog-popular-post-text-title">Cupidatat non proident sunt
+                                                culpa officia</h4>
+                                            <span class="blog-popular-post-text-icon&date"><i
+                                                    class="fa-regular fa-calendar-days"></i>Oct 09, 2021</span>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer_bg_image">
+        <div class="footer_bg_color">
+            <div class="footer_image">
+                <div class="footer_main">
+                    <div class="container">
+                        <div class="footer">
+                            <div class="footer_left">
+                                <span class="footer_text">Subcribe Newslatter</span>
+                                <p class="footer_text_news">Subcribe to recieve daily news</p>
+                            </div>
+                            <div class="footer_email_box">
+                                <div class="flex-emailbox">
+                                    <div class="text-c">
+                                        <label class="ftbox">
+                                            <input type="text" class="email" id="subscribe-email1"
+                                                placeholder="Your Email" required>
+                                        </label>
+                                    </div>
+                                    <div class="email-btn">
+                                        <button class="submit_button" id="subscribe-email"onclick="footer()">Subscribe</button>
+                                    </div>
+                                </div>
+                                <span id="enter-user-email-address"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class=" l_footer_conteiner">
+                        <div class="l_fotter">
+                            <div class="social_title">
+                                <h4 class="title">Contact With Us</h4>
+                            </div>
+                            <div class="social_list">
+                                <ul class="footer_social_list">
+                                    <li><a href="#" class="footer_list_items"><i
+                                                class="fa-brands fa-facebook-f"></i></a></li>
+                                    <li><a href="#" class="footer_list_items"><i class="fa-brands fa-twitter"></i></a>
+                                    </li>
+                                    <li><a href="#" class="footer_list_items"><i class="fa-solid fa-basketball"></i></a>
+                                    </li>
+                                    <li><a href="#" class="footer_list_items"><i class="fa-brands fa-behance"></i></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer_navigation_conteiner">
+                        <div class="footer_navigation">
+                            <div class="footer_navigation_content">
+                                <ul class="list">
+                                    <li><a href="#" class="footer_nav">Home</a></li>
+                                    <li><a href="#" class="footer_nav">About Us</a></li>
+                                    <li><a href="#" class="footer_nav">Sponsors</a></li>
+                                    <li><a href="#" class="footer_nav">schedule</a></li>
+                                    <li><a href="#" class="footer_nav">blog</a></li>
+                                    <li><a href="#" class="footer_nav">Contact</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="l_f_conteiner">
+                        <div class="Last_Content">
+                            <p>2023 Copyright Expotin Designed by Love . All Rights Reserved</p>
+                        </div>
+                    </div>
+                    <div class="active_logo">
+                        <a class="side_active_logo" onclick="topFunction()" id="my-button" href="#">
+                            <i class="fa-solid fa-arrow-up"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../javascript/blog.js"></script>
+    <script src="../javascript/contactform.js"></script>
+</body>
+
+</html>

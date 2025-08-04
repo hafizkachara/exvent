@@ -1,0 +1,2368 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    font-family: "Roboto", sans-serif;
+}
+
+body {
+    width: 100%;
+    padding: 0px 0px 0px 0px;
+    margin: 0px;
+}
+
+.container {
+    width: 100%;
+    max-width: 1150px;
+    padding: 0 16px;
+    margin: auto;
+}
+
+.conference-page-nav-section-1 {
+    width: 100%;
+    max-width: 1118px;
+    margin: 0;
+    display: flex;
+    background-color: transparent;
+    height: auto;
+    position: relative;
+    padding: 0px 16px;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 3;
+    top: 5px;
+}
+
+.navigation_logo {
+    padding: 0;
+    margin: auto 0;
+    padding-top: 3px;
+    cursor: pointer;
+}
+
+ul.conference-page-nav-navigation_bar-main_menu {
+    display: flex;
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+}
+
+.nav_logo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.search_logo {
+    font-size: 18px;
+    cursor: pointer;
+    background: no-repeat;
+    border: none;
+}
+
+button.buy_logo {
+    font-size: 17px;
+    cursor: pointer;
+    margin-left: 5px;
+    background: none;
+    border: none;
+    position: relative;
+}
+
+button.buy_ticket_now-1 {
+    display: inline-block;
+    position: relative;
+    background-color: #fc097c;
+    border-color: transparent;
+    border-radius: 0px;
+    font-family: "Ubuntu", sans-serif;
+    box-shadow: none;
+    transition: all 0.3s ease 0s;
+    color: white;
+    font-weight: 600;
+    font-size: 14px;
+    border-style: solid;
+    cursor: pointer;
+    border: 0;
+    margin-left: 25px;
+    width: 100%;
+    max-width: 168px;
+    height: 50px;
+    padding: 0 31px;
+}
+
+.buy_ticket-1_now:hover {
+    background-color: #250449;
+}
+
+.buy_ticket_now-1::before:hover {
+    border: none;
+}
+
+.submit_button:hover {
+    background-color: #250449;
+}
+
+.buy_ticket_now-1::before {
+    content: "";
+    border: 2px solid black;
+    width: calc(100% - 4px);
+    height: calc(100% - 4px);
+    position: absolute;
+    left: 0;
+    top: 0;
+    transform: translate(4px, 4px);
+    z-index: -1;
+    transition: all 0.2s linear;
+}
+
+a.conference-page-nav-navigation_bar-drop_down-d_list {
+    text-decoration: none;
+    display: flex;
+    position: relative;
+    color: white;
+    font-weight: 600;
+    font-family: "Ubuntu", sans-serif;
+    font-size: 15px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    padding: 20px 18px;
+}
+
+.conference-page-nav-navigation_bar-drop_down {
+    display: inline-block;
+}
+
+.conference-page-nav-navigation_bar-drop_down-d_list-drop_down_content {
+    display: none;
+    position: absolute;
+    background-color: #ffffff;
+    z-index: 1;
+    border-radius: 5px;
+    border-top: 4px solid #ffae4a;
+    transition: all 3s linear;
+    padding: 20px 0;
+}
+
+.conference-page-nav-navigation_bar-drop_down-d_list-drop_down_content a {
+    display: block;
+    width: 270px;
+    color: black;
+    text-decoration: none;
+    text-align: left;
+    border-radius: 5px;
+    font-weight: 600;
+    font-family: "Ubuntu", sans-serif;
+    font-size: 15px;
+    margin: auto;
+    padding: 18px 25px;
+    line-height: 0;
+}
+
+.conference-page-nav-navigation_bar-drop_down:hover .conference-page-nav-navigation_bar-drop_down-d_list-drop_down_content {
+    display: block;
+    transition: all 0.3s linear;
+}
+
+li a:hover,
+.conference-page-nav-navigation_bar-drop_down:hover,
+.conference-page-nav-navigation_bar-drop_down-d_list {
+    color: #ffae4a;
+}
+
+a,
+img,
+.submit_button .conference-page-nav-navigation_bar-drop_down {
+    transition: all 0.3s linear;
+}
+
+.conference-page-background_picture {
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 920px;
+    background-position: center center;
+    background-size: cover;
+}
+
+.search_logo-conference-page {
+    font-size: 16px;
+    cursor: pointer;
+    background: no-repeat;
+    border: none;
+    color: white;
+}
+
+.buy_logo-conference-page {
+    font-size: 16px;
+    border: none;
+    background: none;
+    position: relative;
+    color: white;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+span.notification-conference-page {
+    position: absolute;
+    background-color: #ffae4a;
+    width: 17px;
+    bottom: 11px;
+    left: 11px;
+    height: 17px;
+    border-radius: 20px;
+    color: white;
+    font-size: 10px;
+}
+
+.conference-page-content_background-color {
+    width: 100%;
+    height: 920px;
+    background: linear-gradient(to right, rgb(0 0 0 / 80%), rgb(0 0 0 / 80%));
+    position: relative;
+    top: 0;
+}
+
+.conference-page-header-flex-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    flex-wrap: wrap;
+    text-align: center;
+    position: relative;
+}
+
+.conference-page-header-date span {
+    font-size: 30px;
+    color: #ffae4a;
+    font-weight: 500;
+}
+
+.conference-header-page-heading-title h1 {
+    font-size: 74px;
+    color: #ffffff;
+    margin-bottom: 34px;
+    width: 100%;
+    max-width: 600px;
+    font-family: "Ubuntu", sans-serif;
+}
+
+ul.conference-header-page-heading-ul-vacancy-sheet {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+
+.conference-header-heading-all-sheets a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    margin: 0px 15px;
+}
+
+a.fa-solid fa-chair {
+    color: red;
+}
+
+i.fa-solid.fa-chair {
+    color: #ffae4a;
+    margin-right: 5px;
+}
+
+li.conference-header-heading-speaker-list {
+    display: inline-block;
+}
+
+.conference-header-heading-speaker-list a {
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+    margin: 0 10px;
+}
+
+i.fa-solid.fa-user {
+    color: #ffae4a;
+    margin-right: 5px;
+}
+
+.conference-header-heading-user-location {
+    display: inline-block;
+}
+
+.conference-header-heading-user-location a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    margin: 0 10px;
+}
+
+.conference-header-page-booking-button-flex-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button.conference-page-header-button-1 {
+    padding: 0 15px;
+    display: inline;
+    width: 22.5%;
+    border: none;
+    color: #fff;
+    background-color: #ffae4a;
+    font-size: 16px;
+    font-family: 'Roboto';
+    height: 55px;
+    margin: 0 10px;
+}
+
+.conference-header-page-section-2 {
+    padding: 0 23px;
+    width: 100%;
+    position: absolute;
+    right: 0px;
+    top: 390px;
+    left: 0px;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.counter-page-box-model {
+    justify-content: space-between;
+    display: flex;
+    flex-wrap: nowrap;
+    width: 100%;
+    max-width: 1118px;
+    background: white;
+    top: 0;
+    position: relative;
+    align-items: center;
+    z-index: 0;
+    padding: 75px 0;
+    transform: translateY(-100px);
+    box-shadow: 0px 10px 22px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+}
+
+.counter-days {
+    display: inline-block;
+}
+
+.counter-days:last-child::after {
+    display: none;
+}
+
+.counter-page-box-model:after {
+    content: "";
+    width: 100%;
+    margin: 0px;
+    padding: 80px 0px;
+    top: 0px;
+    z-index: -1;
+    background-image: url("../images/counter-page-box-model-picture.png");
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.page-counter-content-bg-color {
+    background-color: #f1f3ff;
+    position: relative;
+}
+
+.counter-page-box-inside-left {
+    width: 33.33%;
+}
+
+.counter-page-box-inside-right {
+    width: 66.66%;
+}
+
+.counter-page-box-title {
+    font-size: 36px;
+    text-align: center;
+    font-family: 'Ubuntu';
+}
+
+.counter-page-box-subtitle {
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 4px;
+    text-align: center;
+    color: #4c4d56;
+}
+
+.counter-days {
+    display: inline;
+    text-align: center;
+    padding: 0 40px;
+}
+
+span#count\ countdown__time-daysLeft {
+    font-size: 62px;
+    color: black;
+    position: relative;
+    line-height: 1;
+    font-weight: 600;
+}
+
+.page-counter-content-box-flex-model {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 -12px;
+}
+
+.page-content-flex-box-inside-text-left {
+    width: 41.66%;
+    padding: 0 12px;
+}
+
+.page-content--box-inside-text-right {
+    width: 58.33%;
+    padding: 0 12px;
+}
+
+h5.sub-title {
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 700;
+    font-family: 'Ubuntu';
+    color: #fc097c;
+    margin-bottom: 5px;
+    position: relative;
+    display: inline-block;
+}
+
+h5.sub-title::after {
+    content: "";
+    width: 100%;
+    height: 15px;
+    background-color: #fc097c;
+    left: 0;
+    bottom: 0px;
+    opacity: 0.2;
+    position: absolute;
+}
+
+.page-content-body-sub-title {
+    margin: 0px;
+    padding: 0px;
+}
+
+.main-title {
+    font-size: 50px;
+    line-height: 62px;
+    position: relative;
+    z-index: 2;
+    font-weight: 700;
+    font-family: 'Ubuntu';
+    color: #1a0a1e;
+}
+
+.page-counter-content-bg-png-background-img {
+    padding: 200px 0 100px 0;
+    position: relative;
+}
+
+.page-content-right-side-flex-box {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    column-gap: 25px;
+}
+
+.counter-items {
+    padding: 55px 20px;
+    background-color: white;
+    margin: 0 15px;
+    text-align: center;
+    position: relative;
+    z-index: 2;
+    width: 33.33%;
+}
+
+h1.counter-number-1 {
+    font-size: 48px;
+    color: #f9d464;
+    line-height: 1.5;
+    font-family: "ubuntu";
+}
+
+.counter-items span {
+    font-size: 18px;
+    font-weight: 700;
+    color: #000000;
+    text-transform: uppercase;
+    line-height: 1.75;
+}
+
+.counter-items::before {
+    position: absolute;
+    content: "";
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #f1f3ff;
+    right: 0;
+    left: 0px;
+    top: -20px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.counter-items::after {
+    position: absolute;
+    content: "";
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #f1f3ff;
+    text-align: center;
+    margin: 0 auto;
+    right: 0;
+    left: 0px;
+    bottom: -20px;
+}
+
+h1.counter-number-2 {
+    font-size: 48px;
+    color: #fc097c;
+    line-height: 1.5;
+    font-family: "ubuntu";
+}
+
+h1.counter-number-3 {
+    font-size: 48px;
+    color: #00acee;
+    font-family: "ubuntu";
+    line-height: 1.5;
+}
+
+img.page-counter-content-bg-png-background-img--img-number-1 {
+    top: 65px;
+    left: 0px;
+    position: absolute;
+    z-index: 2;
+}
+
+img.page-counter-content-bg-png-background-img--img-number-2 {
+    top: 30px;
+    right: 200px;
+    position: absolute;
+    z-index: 2;
+}
+
+.page-about-content-section-3-flex-box {
+    display: flex;
+}
+
+.page-about-content-section-3-flex-box-container-left-side-box {
+    width: 41.66%;
+}
+
+img.about-page-section-3-image-1 {
+    margin-bottom: 35px;
+    max-width: 100%;
+}
+
+img.about-page-sectiuob-3-image-2 {
+    margin-right: 95px;
+    margin-bottom: 35px;
+}
+
+.container-page-about-section-3-left-side {
+    margin-right: -165px;
+    text-align: center;
+}
+
+.container-page-about-section-3-right-side {
+    z-index: 0;
+    padding: 120px 60px;
+    border: 10px solid #f9d464;
+    position: relative;
+    margin-top: 40px;
+    background-color: #fff;
+}
+
+img.about-page-section-3-right-side-bar-image-1 {
+    position: absolute;
+    right: -53px;
+    bottom: -53px;
+}
+
+img.about-page-section-3-right-side-bar-image-2 {
+    position: absolute;
+    right: 60px;
+    top: 60px;
+    z-index: 0;
+}
+
+.container-page-about-section-3-right-side-about-page-paragraph p {
+    margin-top: 35px;
+    font-size: 16px;
+    line-height: 30px;
+    font-family: 'Roboto';
+    color: #4c4d56;
+}
+
+.container-page-about-section-3-right-side-about-page-paragraph {
+    padding-right: 103px;
+    margin-bottom: 30px;
+}
+
+.page-about-section-3 {
+    padding: 140px 0;
+    background: #fff;
+}
+
+.page-about-content-section-3-flex-box-container-right-side-box {
+    width: 58.66%;
+}
+
+.speaker-section-4page-content-images-flex-box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+}
+
+.speaker-section-title-flex-box {
+    display: flex;
+    text-align: center;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    padding-bottom: 80px;
+}
+
+.speaker-section-page-content-title {
+    padding-top: 100px;
+}
+
+.speaker-section-4-background-color {
+    background-color: #250449;
+}
+
+h5.speaker-section-page-sub-title {
+    color: #fc097c;
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 700;
+    font-family: 'Ubuntu';
+    margin-bottom: 5px;
+}
+
+h2.speaker-section-page-main-tatile {
+    font-size: 50px;
+    line-height: 62px;
+    font-family: 'Ubuntu';
+    position: relative;
+    z-index: 2;
+    font-weight: 700;
+    color: #fff;
+}
+
+.speaker-section-4-page-content-user-images {
+    width: 100%;
+}
+
+.section-4-images-row-col {
+    width: 25%;
+    overflow: hidden;
+}
+
+a.speaker-section-4-images-links {
+    display: inline;
+}
+
+.section-4-single-speaker {
+    position: relative;
+}
+
+img.section-4-img-w {
+    width: 100%;
+}
+
+.conference-page-speaker-section-4 {
+    padding: 0px;
+}
+
+.section-4-speaker-content-text {
+    position: absolute;
+    bottom: 60px;
+    z-index: 4;
+    right: 0px;
+    left: 0px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.section-4-speaker-content-image-shape {
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    z-index: 3;
+}
+
+.section-4-images-row-col:hover img.section-4-img-w {
+    transform: scale(1.1);
+}
+
+a.speaker-section-4-images-links .section-4-single-speaker::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, #1c0087, #9c00b1);
+    position: absolute;
+    top: 0;
+    left: 0px;
+    opacity: 0.45;
+    z-index: 2;
+}
+
+.section-4-speaker-content-text h4 {
+    font-size: 24px;
+    font-family: "ubuntu";
+    color: #fff;
+    line-height: 1.5;
+    font-weight: 700;
+}
+
+.section-4-speaker-content-text span {
+    font-size: 14px;
+    font-family: "Roboto";
+    color: #fff;
+}
+
+img.section-5-bg-img-1 {
+    position: absolute;
+    top: 0;
+    left: 0px;
+}
+
+img.section-5-bg-img-2 {
+    position: absolute;
+    top: 0;
+    right: 0px;
+}
+
+.conference-Schedule-page-content-section-5 {
+    padding: 100px 0;
+    position: relative;
+}
+
+.conference-page-section-5-title-flex-box {
+    position: relative;
+}
+
+h5.section-5-sub-title {
+    display: inline-block;
+    color: #fc097c;
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 700;
+    position: relative;
+    margin-bottom: 5px;
+    font-family: 'Ubuntu';
+}
+
+.section-5-schedule-content-form-left-side {
+    position: relative;
+    width: 16.66%;
+}
+
+.Schedule-form-left-side-content {
+    position: sticky;
+    top: 80px;
+    z-index: 5;
+}
+
+.section-5-Schedule-content-form {
+    display: flex;
+}
+
+.nav-link-1 {
+    padding: 60px 36px;
+    position: relative;
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    background-color: #fc097c;
+    font-size: 24px;
+    font-weight: 500;
+    font-family: 'Roboto';
+    cursor: pointer;
+    z-index: 5;
+    color: white;
+}
+
+.nav-link-2 {
+    padding: 60px 36px;
+    position: relative;
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    background-color: #f9d464;
+    font-size: 24px;
+    font-weight: 500;
+    font-family: 'Roboto';
+    cursor: pointer;
+    z-index: 5;
+    color: white;
+}
+
+.nav-link-3 {
+    padding: 60px 36px;
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    background-color: #00acee;
+    color: white;
+    font-size: 24px;
+    font-weight: 500;
+    position: relative;
+    cursor: pointer;
+    z-index: 5;
+}
+
+.conference-Schedule-page-content-title {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 100%;
+}
+
+.section-5-schedule-content-form-right-side {
+    width: 83.33%;
+    background-color: white;
+    position: relative;
+    z-index: 2;
+    padding: 0 55px;
+    margin-left: -50px;
+}
+
+.user-option-submit {
+    display: flex;
+    position: relative;
+    flex-wrap: nowrap;
+    flex-direction: column;
+}
+
+.section-5-user-form-1 {
+    display: flex;
+    width: 100%;
+    max-width: 815px;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    padding: 55px 0;
+    border-bottom: 1px solid #ebebeb;
+    align-items: center;
+}
+
+.section-5-user-form-2 {
+    display: flex;
+    width: 100%;
+}
+
+.section-5-user-form-3 {
+    display: flex;
+    width: 105%;
+}
+
+.section-5-user-form-1-left-side-profile {
+    position: relative;
+}
+
+.section-5-user-form-left-side-profile {
+    width: 25%;
+    border-right: 1px solid #ebebeb;
+}
+
+.section-5-user-form-1-right-side-profile {
+    width: 75%;
+    position: relative;
+    padding: 0 90px 0 39px;
+}
+
+h3.section-5-h3_date {
+    font-size: 48px;
+    color: #fc097c;
+    font-weight: 700;
+    margin-right: 10px;
+}
+
+.section-5-date_tool {
+    display: flex;
+}
+
+.section-5-date_time span {
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1.75;
+    position: relative;
+}
+
+.section-5-date_time p {
+    font-size: 14px;
+    color: #959595;
+}
+
+i.fa-solid.fa-location-dot {
+    color: #ffae4a;
+    margin-right: 5px;
+}
+
+i.fa-solid.fa-minus {
+    position: absolute;
+    top: -3px;
+    right: 0;
+    font-size: 22px;
+    color: #fc097c;
+}
+
+.section-5-user-form-location span {
+    font-size: 14px;
+    font-family: 'Roboto';
+    color: #959595;
+    line-height: 1.75;
+}
+
+.section-5-user-form-location {
+    margin-bottom: 10px;
+    line-height: 1.75;
+}
+
+h4.section-5-user-form-text-content-title {
+    font-size: 22px;
+    font-weight: 700;
+    font-family: 'Ubuntu';
+    margin-bottom: 20px;
+}
+
+.section-5-user-form-text-content p {
+    font-size: 14px;
+    color: #4c4d56;
+    line-height: 1.75;
+}
+
+p.p2 {
+    margin-top: 15px;
+}
+
+i.fa-solid.fa-plus {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    color: #fc097c;
+    font-size: 22px;
+}
+
+.section-6-event-pricing-background-image {
+    background-image: url(../images/section-6-event-pricing-background-image.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+}
+
+.section-6-event-pricing-content-page {
+    padding: 120px 0px;
+    position: relative;
+}
+
+.section-6-event-pricing-title-flex-box {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+h5.section-6-sub-title {
+    font-size: 18px;
+    color: #fc097c;
+    font-family: 'Ubuntu';
+    margin-bottom: 5px;
+    line-height: 30px;
+    font-weight: 700;
+}
+
+.section-6-main-title {
+    font-size: 50px;
+    line-height: 62px;
+    color: white;
+    font-family: 'Ubuntu';
+    position: relative;
+    z-index: 2;
+}
+
+.section-6-event-pricing-content-title {
+    margin-bottom: 55px;
+}
+
+.section-6-pass-form-flex-box {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    column-gap: 20px;
+}
+
+.section-6-pass-form-model {
+    width: 33.33%;
+    position: relative;
+}
+
+.section-6-pass-form-model {
+    width: 100%;
+    max-width: 359px;
+    background-color: white;
+    padding-bottom: 60px;
+    position: relative;
+    z-index: 99;
+    margin: 0 0px;
+}
+
+span.section-6-pass-plans {
+    font-size: 20px;
+    font-weight: 700;
+    font-family: 'Roboto';
+    line-height: 1.75;
+    display: block;
+}
+
+.section-6-pass-price-header {
+    padding: 55px 0;
+    padding-bottom: 30px;
+    color: #ffffff;
+    background-color: #00acee;
+}
+
+h3.section-6-pass-plan-amount {
+    font-size: 60px;
+    font-family: 'Ubuntu';
+    line-height: 1.5;
+    font-weight: 700;
+}
+
+sup {
+    font-size: 18px;
+    position: relative;
+    font-weight: 600;
+    font-family: 'Ubuntu';
+    top: -15px;
+    left: 0px;
+}
+
+.section-6-pass-price-body {
+    padding: 40px 0;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+ul.section-6-price-body-content li {
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: #666666;
+    line-height: 1.75;
+}
+
+ul.section-6-price-body-content {
+    list-style-type: none;
+    padding: 0px;
+}
+
+button.buy_ticket_now-1:hover:before {
+    transform: translate(0, 0);
+}
+
+button.buy_seat_ticket_now {
+    display: inline-block;
+    position: relative;
+    background-color: #00acee;
+    border-color: transparent;
+    border-radius: 0px;
+    font-family: "Ubuntu", sans-serif;
+    box-shadow: none;
+    transition: all 0.3s ease 0s;
+    color: white;
+    font-weight: 600;
+    font-size: 14px;
+    border-style: solid;
+    cursor: pointer;
+    border: 0;
+    margin-left: 25px;
+    width: 100%;
+    max-width: 142px;
+    height: 50px;
+}
+
+.buy_seat_ticket_now:hover {
+    background-color: #250449;
+}
+
+.buy_seat_ticket_now::before:hover {
+    border: none;
+}
+
+.buy_seat_ticket_now::before {
+    content: "";
+    border: 2px solid black;
+    width: calc(100% - 4px);
+    height: calc(100% - 4px);
+    position: absolute;
+    left: 0;
+    top: 0;
+    transform: translate(4px, 4px);
+    z-index: -1;
+    transition: all 0.2s linear;
+}
+
+button.buy_seat_ticket_now:hover:before {
+    transform: translate(0, 0);
+}
+
+button.buy_seat_ticket_now-1 {
+    display: inline-block;
+    position: relative;
+    background-color: #fc097c;
+    border-color: transparent;
+    border-radius: 0px;
+    font-family: "Ubuntu", sans-serif;
+    box-shadow: none;
+    transition: all 0.3s ease 0s;
+    color: white;
+    font-weight: 600;
+    font-size: 14px;
+    border-style: solid;
+    cursor: pointer;
+    border: 0;
+    margin-left: 25px;
+    width: 100%;
+    max-width: 142px;
+    height: 50px;
+}
+
+.buy_seat_ticket_now-1:hover {
+    background-color: #250449;
+}
+
+.buy_seat_ticket_now-1::before:hover {
+    border: none;
+}
+
+.buy_seat_ticket_now-1::before {
+    content: "";
+    border: 2px solid black;
+    width: calc(100% - 4px);
+    height: calc(100% - 4px);
+    position: absolute;
+    left: 0;
+    top: 0;
+    transform: translate(4px, 4px);
+    z-index: -1;
+    transition: all 0.2s linear;
+}
+
+button.buy_seat_ticket_now-1:hover:before {
+    transform: translate(0, 0);
+}
+
+button.buy_seat_ticket_now-2 {
+    display: inline-block;
+    position: relative;
+    background-color: #f9d464;
+    border-color: transparent;
+    border-radius: 0px;
+    font-family: "Ubuntu", sans-serif;
+    box-shadow: none;
+    transition: all 0.3s ease 0s;
+    color: white;
+    font-weight: 600;
+    font-size: 14px;
+    border-style: solid;
+    cursor: pointer;
+    border: 0;
+    margin-left: 25px;
+    width: 100%;
+    max-width: 142px;
+    height: 50px;
+}
+
+.buy_seat_ticket_now-2:hover {
+    background-color: #250449;
+}
+
+.buy_seat_ticket_now-2::before:hover {
+    border: none;
+}
+
+.buy_seat_ticket_now-2::before {
+    content: "";
+    border: 2px solid black;
+    width: calc(100% - 4px);
+    height: calc(100% - 4px);
+    position: absolute;
+    left: 0;
+    top: 0;
+    transform: translate(4px, 4px);
+    z-index: -1;
+    transition: all 0.2s linear;
+}
+
+button.buy_seat_ticket_now-2:hover:before {
+    transform: translate(0, 0);
+}
+
+.section-6-pass-form-model {
+    text-align: center;
+}
+
+.section-6-event-pricing-background-color {
+    background: linear-gradient(to right, rgb(28 0 135 / 90%), rgb(154 0 176 / 90%));
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+.section-6-pass-price-header-1 {
+    padding: 55px 0;
+    padding-bottom: 30px;
+    color: #ffffff;
+    background-color: #fc097c;
+}
+
+.section-6-pass-price-header-2 {
+    padding: 55px 0;
+    padding-bottom: 30px;
+    background-color: #f9d464;
+    color: #ffffff;
+}
+
+.sponsors-page-section-7-background-color {
+    background-color: white;
+    padding-top: 140px;
+    padding-bottom: 110px;
+}
+
+.sponsors-page-content-title-flex-box {
+    margin-bottom: 50px;
+}
+
+.sponsors-page-content-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.sponsors-sub-title {
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 700;
+    font-family: 'Ubuntu';
+    margin-bottom: 5px;
+    position: relative;
+    color: #fc097c;
+    text-align: center;
+}
+
+.sponsors-sub-title::after {
+    content: "";
+    width: 100%;
+    height: 15px;
+    position: absolute;
+    opacity: 0.2;
+    background-color: #fc097c;
+    left: 0;
+    bottom: 0;
+    text-align: center;
+}
+
+.sponsors-main-title {
+    font-size: 50px;
+    line-height: 62px;
+    font-family: 'Ubuntu';
+    font-weight: 700;
+}
+
+.leading-company-images {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+    text-align: center;
+}
+
+.section-7-img-1 {
+    width: 100%;
+    max-width: 227px;
+}
+
+.previous-gallery-page-section-8 {
+    padding-top: 100px;
+    padding-bottom: 130px;
+}
+
+.section-title-flex-box {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.section-8-sub-title {
+    font-family: 'Ubuntu';
+    font-size: 18px;
+    margin-bottom: 5px;
+    line-height: 30px;
+    font-weight: 700;
+    position: relative;
+    display: inline-block;
+    color: #fc097c;
+}
+
+.section-8-sub-title::after {
+    content: "";
+    width: 100%;
+    height: 15px;
+    background-color: #fc097c;
+    position: absolute;
+    opacity: 0.2;
+    left: 0;
+    bottom: 0;
+}
+
+.previous-page-gallery-page-content-title {
+    margin-bottom: 60px;
+    padding: 0 12px;
+}
+
+.section-8-main-title {
+    font-size: 50px;
+    line-height: 62px;
+    font-family: 'Ubuntu';
+    font-weight: 700;
+}
+
+.section-8-images-row-col {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    max-width: 1121px;
+    height: 100%;
+}
+
+a.section-8-images-single-gallery {
+    position: relative;
+    padding: 0;
+}
+
+.section-8-gallery-content {
+    position: absolute;
+    left: 45px;
+    bottom: 50px;
+    z-index: 5;
+    overflow: hidden;
+}
+
+.a img {
+    position: relative;
+}
+
+.section-8-gallery-images-page {
+    position: relative;
+    width: 100%;
+    max-width: 279px;
+    overflow: hidden;
+}
+
+.section-8-gallery-content span {
+    color: white;
+    font-size: 14px;
+    font-weight: 700;
+    background-color: #fc097c;
+    font-family: 'Ubuntu';
+    padding: 5px 10px;
+    display: inline-block;
+    margin-bottom: 3px;
+    line-height: 1;
+}
+
+.section-8-gallery-content h5 {
+    padding: 2px 10px;
+    font-size: 24px;
+    background-color: #ffffff;
+    font-family: 'Ubuntu';
+    line-height: 1;
+}
+
+a.section-8-images-single-gallery::before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-radius: 100%;
+    background: linear-gradient(to right, #1c0087, #9a00b0);
+    bottom: -297px;
+    left: -98px;
+    transition: .3s;
+}
+
+a.section-8-images-single-gallery::after {
+    content: "";
+    position: absolute;
+    width: 230px;
+    height: 230px;
+    border-radius: 100%;
+    border: 1px solid #ffffff;
+    bottom: -230px;
+    left: -150px;
+    transition: .5s;
+}
+
+.footer::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    top: 0;
+    z-index: -1;
+    position: absolute;
+    background-image: url(../images/footer_bc_img.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+a.section-8-images-single-gallery:hover::before {
+    width: 230px;
+    height: 230px;
+}
+
+a.section-8-images-single-gallery:hover::after {
+    bottom: -322px;
+    left: -91px;
+}
+
+button.buy_ticket_now-conference-nav {
+    color: white;
+    background-color: #ffae4a;
+    width: 150px;
+    height: 60px;
+    padding: 15px 0;
+    font-size: 16px;
+    overflow: hidden;
+    position: relative;
+    border: none;
+    margin-left: 23px;
+    font-family: inherit;
+}
+
+h5.section-5-sub-title::after {
+    content: "";
+    width: 100%;
+    height: 15px;
+    background-color: #fc097c;
+    position: absolute;
+    bottom: 0;
+    left: 0px;
+    opacity: 0.2;
+}
+
+a.footer_list_items:hover {
+    background-color: #fc097c;
+}
+
+a.footer_nav:hover {
+    color: #fc097c;
+}
+
+li a,
+.conference-page-nav-navigation_bar-drop_down-d_list:hover {
+    color: #ffae4a;
+}
+
+li a,
+.conference-page-nav-navigation_bar-drop_down-d_list-drop_down_content:hover {
+    color: #ffae4a;
+}
+
+button.buy_ticket_now-conference-nav:after {
+    content: "";
+    width: 25px;
+    height: 200px;
+    background-color: rgb(255 255 255 / 60%);
+    position: absolute;
+    bottom: -37px;
+    left: -34px;
+    transform: rotate(45deg);
+    transition: all 0.5s linear;
+}
+
+button.buy_ticket_now-conference-nav:hover::after {
+    bottom: -145px;
+    left: 183px;
+}
+
+button.buy_ticket_now-conference-nav::before {
+    content: "";
+    width: 25px;
+    height: 200px;
+    position: absolute;
+    background: rgb(255 255 255 / 50%);
+    bottom: 37px;
+    left: -75px;
+    transform: rotate(45deg);
+    transition: all 0.4s linear;
+}
+
+button.buy_ticket_now-conference-nav:hover::before {
+    bottom: -121px;
+    left: 137px;
+}
+
+.about-page-section-3-image-2 {
+    margin-right: 95px;
+    margin-bottom: 35px;
+}
+
+.counter-days {
+    display: inline-block;
+    text-align: center;
+    padding: 0 40px;
+    z-index: 3;
+    position: relative;
+    color: #1a0a1e;
+    z-index: 1;
+    font-family: "ubuntu";
+}
+
+img.page-counter-content-bg-png-background-img--img-number-2 {
+    top: 30px;
+    right: 200px;
+    position: absolute;
+    z-index: 2;
+    transform: rotate(45deg);
+    -webkit-animation: round-01 3s linear infinite;
+    animation: round-01 3s linear infinite;
+}
+
+img.about-page-section-3-right-side-bar-image-1 {
+    position: absolute;
+    right: -53px;
+    bottom: -53px;
+    width: 100%;
+    z-index: -1;
+}
+
+.speaker-section-title-flex-box {
+    display: flex;
+    padding-bottom: 80px;
+    align-items: center;
+}
+
+.section-5-schedule-content-form-right-side {
+    width: 88.33%;
+    background-color: white;
+    position: relative;
+    z-index: 2;
+    padding: 0 55px;
+    z-index: 0;
+}
+
+.section-5-user-form-text-content p {
+    font-size: 14px;
+    color: #4c4d56;
+    line-height: 1.75;
+    font-family: "roboto";
+}
+
+a.section-8-images-single-gallery::after {
+    content: "";
+    position: absolute;
+    width: 230px;
+    height: 230px;
+    border-radius: 100%;
+    border: 1px solid #ffffff;
+    bottom: -309px;
+    left: -236px;
+    transition: .5s;
+    z-index: 4;
+}
+
+img.ds-none {
+    height: 920px;
+    width: 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+img {
+    vertical-align: middle;
+}
+
+p.nav-link-1::after {
+    content: "";
+    width: 0%;
+    height: 0px;
+    position: absolute;
+    left: 0px;
+    right: 96px;
+    top: 81px;
+    bottom: 0px;
+    border-width: 15px 20px 15px 0;
+    border-style: solid;
+    border-color: transparent #fc097c transparent transparent;
+    display: none;
+}
+
+p.nav-link-1:hover::after {
+    display: block;
+    transition: all 3s linear;
+}
+
+.count.countdown__time-daysLeft {
+    font-size: 62px;
+    font-weight: 600;
+    line-height: 1;
+    position: relative;
+    z-index: 1;
+    color: #1a0a1e;
+}
+
+.value-countdown__time-daysText {
+    display: block;
+    color: #fc097c;
+    font-size: 16px;
+}
+
+.count.countdown__time-hoursLeft {
+    font-size: 62px;
+    font-weight: 600;
+    line-height: 1;
+    position: relative;
+    z-index: 1;
+}
+
+.value-countdown__time-hoursText {
+    display: block;
+    font-size: 16px;
+    color: #fc097c;
+}
+
+.count.countdown__time-minutesLeft {
+    font-size: 62px;
+    font-weight: 600;
+    position: relative;
+    z-index: 1;
+    line-height: 1;
+}
+
+.value-countdown__time-minutesText {
+    display: block;
+    font-size: 16px;
+    color: #fc097c;
+}
+
+.count.countdown__time-secondsLeft {
+    font-size: 62px;
+    font-weight: 600;
+    position: relative;
+    line-height: 1;
+    z-index: 1;
+}
+
+.value-countdown__time-secondsText {
+    display: block;
+    font-size: 16px;
+    color: #fc097c;
+}
+
+.counter-days::after {
+    content: ":";
+    font-size: 90px;
+    position: absolute;
+    bottom: 8px;
+    right: -13px;
+}
+
+.section-4sub-title {
+    font-size: 18px;
+    font-family: "ubuntu";
+    font-weight: 700;
+    line-height: 30px;
+    color: #fc097c;
+    position: relative;
+    display: inline-block;
+    z-index: 4;
+}
+
+.section-4sub-title::after {
+    content: "";
+    width: 100%;
+    height: 15px;
+    background-color: #fc097c;
+    position: absolute;
+    left: 0;
+    bottom: 0px;
+    opacity: 0.17;
+}
+
+button.buy_ticket_now-conference-nav:hover {
+    background-color: #fc097c;
+}
+
+img.shape_1.image-fluid {
+    position: absolute;
+    left: 0px;
+}
+
+img.shape_2.image-fluid {
+    position: absolute;
+    right: 0px;
+}
+
+.main-nav-bar {
+    display: flex;
+    align-items: center;
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    text-decoration: none;
+}
+
+.bg-bar {
+    display: none;
+}
+
+.down_arrow {
+    position: absolute;
+    top: 19px;
+    left: 60px;
+    bottom: 0px;
+    right: 0px;
+}
+
+.dn2 {
+    left: 49px;
+    top: 20px;
+}
+
+/* Responsive */
+
+@media only screen and (max-width: 767px) {
+    .conference-page-nav-section-1 {
+        width: 100%;
+        padding: 0px;
+    }
+
+    .conference-page-nav-navigation_bar-main_menu {
+        flex-direction: column;
+        padding: 0px;
+    }
+
+    .buy_ticket_now-conference-nav {
+        display: none;
+    }
+
+    .main-nav-bar {
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        align-items: baseline;
+        background-color: #dd2626;
+        display: none;
+    }
+
+    .search_logo-conference-page {
+        font-size: 20px;
+        margin-right: 5px;
+    }
+
+    .buy_logo-conference-page {
+        font-size: 20px;
+    }
+
+    .bg-bar {
+        margin-left: 30px;
+        font-size: 31px;
+    }
+
+    .conference-page-nav-navigation_bar-drop_down-d_list-drop_down_content a {
+        width: 100%;
+    }
+
+    .conference-page-nav-navigation_bar-drop_down-d_list-drop_down_content {
+        position: relative;
+        width: 100%;
+        left: unset;
+        top: unset;
+        display: none;
+    }
+
+    .bg-menu-nav {
+        background: none;
+        border: none;
+        color: white !important;
+        font-size: 30px;
+    }
+
+    .bg-bar {
+        display: block;
+    }
+
+    a.conference-page-nav-navigation_bar-drop_down-d_list {
+        width: 100%;
+        justify-content: left;
+        text-align: left;
+        align-items: center;
+        padding: 17px 20px;
+    }
+
+    .down_arrow {
+        position: absolute;
+        top: 18px;
+        left: 60px;
+        bottom: 0px;
+        right: 0px;
+    }
+
+    .conference-page-nav-navigation_bar-drop_down {
+        display: inline-block;
+        width: 100%;
+    }
+
+}
+
+@media only screen and (max-width: 767px) {
+    .conference-page-background_picture {
+        position: relative;
+        width: 100%;
+        height: auto;
+    }
+
+    .conference-page-content_background-color {
+        width: 100%;
+        height: 610px;
+    }
+
+    .conference-header-page-section-2 {
+        width: 100%;
+        position: absolute;
+        top: 220px;
+        padding: 0px;
+    }
+
+    .conference-page-header-date span {
+        font-size: 21px;
+        padding: 0px;
+        margin: 0px;
+    }
+
+    .conference-header-page-heading-title h1 {
+        font-size: 37px;
+        width: 100%;
+        margin-top: 6px;
+        margin-bottom: 19px;
+        padding: 0px;
+    }
+
+    ul.conference-header-page-heading-ul-vacancy-sheet {
+        align-items: baseline;
+        margin: 0px;
+        flex-wrap: wrap;
+        width: 100%;
+        gap: 10px 0;
+        justify-content: center;
+    }
+
+    .conference-header-heading-all-sheets a,
+    .conference-header-heading-speaker-list a,
+    li.conference-header-heading-user-location a {
+        font-size: 18px;
+        margin: 0 5px;
+        margin-bottom: 10px;
+    }
+
+    .counter-page-box-model {
+        flex-wrap: wrap;
+        padding: 25px 0;
+        gap: 14px;
+    }
+
+    .counter-page-box-inside-left,
+    .counter-page-box-inside-right {
+        width: 100%;
+    }
+
+    .counter-page-box-model:after {
+        opacity: 0.3;
+    }
+
+    .counter-days::after {
+        top: -7px;
+        font-size: 28px;
+        right: -15px;
+    }
+
+    .counter-days {
+        padding: 0px;
+    }
+
+    .data-countdown {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 20px;
+        justify-content: center;
+    }
+
+    .count.countdown__time-daysLeft,
+    .count.countdown__time-hoursLeft,
+    .count.countdown__time-minutesLeft,
+    .count.countdown__time-secondsLeft {
+        font-size: 27px;
+    }
+
+    .value-countdown__time-daysText,
+    .value-countdown__time-hoursText,
+    .value-countdown__time-minutesText,
+    .value-countdown__time-secondsText {
+
+        font-size: 13px;
+
+    }
+
+    .page-counter-content-bg-png-background-img--img-number-2 {
+        display: none;
+    }
+
+    .page-counter-content-box-flex-model {
+        width: 100%;
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+
+    .page-content-flex-box-inside-text-left {
+        width: 100%;
+        padding: 0px 12px;
+    }
+
+    .page-content--box-inside-text-right {
+        width: 100%;
+    }
+
+    .page-content-right-side-flex-box {
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .page-about-content-section-3-flex-box {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .about-page-section-3-right-side-bar-image-1 {
+        display: none;
+    }
+
+    .page-about-content-section-3-flex-box-container-left-side-box,
+    .container-page-about-section-3-left-side {
+        width: 100%;
+    }
+
+    .page-about-content-section-3-flex-box-container-right-side-box {
+        width: 100%;
+        padding-bottom: 30px;
+    }
+
+    .container-page-about-section-3-right-side {
+        padding: 15px 16px;
+    }
+
+    .container-page-about-section-3-right-side-about-page-paragraph {
+        padding: 0;
+    }
+
+    img.about-page-section-3-right-side-bar-image-2 {
+        display: none;
+    }
+
+    .page-about-section-3 {
+        padding: 0px 0px;
+    }
+
+    .main-title {
+        font-size: 22px;
+        line-height: 1;
+    }
+
+    .counter-page-box-title {
+        font-size: 24px;
+    }
+
+    .counter-page-box-subtitle {
+        font-size: 13px;
+        letter-spacing: 3px;
+    }
+
+    #boking-btn {
+        margin-left: 0px;
+        padding: 0;
+    }
+}
+
+/* section->4 */
+@media only screen and (max-width: 767px) {
+    .speaker-section-page-content-title {
+        padding: 22px 0;
+    }
+
+    .section-4sub-title {
+        font-size: 16px;
+    }
+
+    .section-4-speaker-content-image-shape {
+        bottom: -15px;
+        left: -3px;
+    }
+
+    .speaker-section-4-page-content-user-images {
+        padding: 0 11px;
+    }
+
+    .section-4-speaker-content-text h4 {
+        font-size: 20px;
+        line-height: 1;
+    }
+
+    .section-4-speaker-content-text span {
+        font-size: 13px;
+    }
+
+    .section-5-bg-img-2 {
+        display: none;
+    }
+
+    /* .speaker-section-title-flex-box {
+        padding-bottom: 30px;
+    } */
+
+    h2.speaker-section-page-main-tatile {
+        font-size: 27px;
+        line-height: 1.2;
+    }
+
+    .speaker-section-4page-content-images-flex-box {
+        flex-direction: column;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .section-4-images-row-col {
+        width: 100%;
+    }
+
+    .counter-items {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        max-width: 187px;
+        height: 100%;
+        margin: 0 0 20px;
+    }
+
+    .page-counter-content-bg-png-background-img {
+        padding: 25px 0 0px 0px;
+    }
+
+    img.page-counter-content-bg-png-background-img--img-number-1 {
+        top: -58px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .conference-page-section-5-title-flex-box {
+        padding-bottom: 30px;
+    }
+
+    .section-5-schedule-content-form-left-side {
+        width: 100%;
+        max-width: 68px;
+    }
+
+    .section-5-user-form-location {
+        font-size: 15px;
+        margin: 0px;
+    }
+
+    h4.section-5-user-form-text-content-title {
+        font-size: 17px;
+        margin-bottom: 10px;
+    }
+
+    .section-5-user-form-text-content p {
+        font-size: 12px;
+        line-height: 1.5;
+    }
+
+    p.p2 {
+        margin-top: 10px;
+    }
+
+    .conference-Schedule-page-content-section-5 {
+        padding: 30px 0;
+    }
+
+    h3.section-5-h3_date {
+        margin: 0px;
+        font-size: 34px;
+    }
+
+    .section-5img_events {
+        width: 100%;
+        max-width: 70px;
+    }
+
+    .section-5-date_time span {
+        font-size: 13px;
+        line-height: 1;
+    }
+
+    .section-5-date_time p {
+        font-size: 11px;
+    }
+
+    i.fa-solid.fa-minus {
+        top: 2px;
+        right: 0px;
+    }
+
+    i.fa-solid.fa-plus {
+        top: 2px;
+        right: 0px;
+    }
+
+    .section-5-user-form-location span {
+        font-size: 11px;
+    }
+
+    .container-page-about-section-3-right-side-about-page-paragraph p {
+        margin-top: 15px;
+        font-size: 16px;
+        line-height: 18px;
+    }
+
+    .section-5-user-form-1 {
+        align-items: flex-start;
+        width: 100%;
+        max-width: 625px;
+        padding: 25px 16px;
+        flex-direction: column;
+    }
+
+    .section-5-schedule-content-form-right-side {
+        width: 100%;
+        padding: 0px;
+        margin: 0px;
+    }
+
+    .section-5-user-form-left-side-profile {
+        display: flex;
+        flex-direction: row-reverse;
+        width: 100%;
+        align-items: center;
+        justify-content: flex-end;
+        gap: 15px;
+        border: none;
+    }
+
+    .section-5-date_tool {
+        flex-direction: column;
+    }
+
+    .section-5-user-form-1-right-side-profile {
+        width: 100%;
+        padding: 0px;
+    }
+
+    h3.section-6-pass-plan-amount {
+        font-size: 30px;
+    }
+
+    .nav-link-1,
+    .nav-link-2,
+    .nav-link-3 {
+        padding: 35px 16px;
+    }
+
+    h5.section-6-sub-title {
+        font-size: 14px;
+        line-height: 1;
+        margin: 0;
+    }
+
+    sup {
+        top: -4px;
+        left: 2px;
+        font-size: 14px;
+    }
+
+    ul.section-6-price-body-content li {
+        margin: 0px;
+        line-height: 2;
+    }
+
+    .section-6-pass-price-body {
+        padding: 10px 0;
+    }
+
+    .section-6-event-pricing-content-title {
+        margin-bottom: 10px;
+    }
+
+    .section-6-pass-price-header,
+    .section-6-pass-price-header-1,
+    .section-6-pass-price-header-2 {
+        padding: 19px 0;
+        padding-bottom: 15px;
+        text-align: center;
+    }
+
+    span.section-6-pass-plans {
+        font-size: 16px;
+        line-height: 1;
+    }
+
+    .section-6-pass-form-flex-box {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .section-6-pass-form-model {
+        width: 100%;
+        max-width: 325px;
+        margin: 10px 0;
+        padding-bottom: 21px;
+    }
+
+    p.nav-link-1::after {
+        right: 54px;
+        top: 58px;
+        bottom: 0;
+    }
+
+    button.btn-danger {
+        margin: 0px;
+    }
+
+    .leading-company-images {
+        gap: 12px;
+    }
+
+    .section-6-main-title {
+        font-size: 26px;
+        line-height: 1.3;
+    }
+
+    .sponsors-main-title {
+        font-size: 23px;
+        line-height: 1.1;
+    }
+
+    .sponsors-page-content-title-flex-box {
+        margin-bottom: 10px;
+    }
+
+    .sponsors-sub-title {
+        font-size: 14px;
+        line-height: 1;
+    }
+
+    .section-8-images-row-col {
+        flex-direction: column;
+        height: auto;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .section-8-gallery-images-page {
+        width: 100%;
+    }
+
+    img.section-8-img-mai {
+        width: 100%;
+    }
+
+    .about-page-section-3-image-2 {
+        margin: 0px;
+        width: 100%;
+    }
+
+    .section-8-gallery-content span {
+
+        font-size: 14px;
+
+    }
+
+    .section-8-gallery-content h5 {
+
+        font-size: 19px;
+
+    }
+
+    img.section-5-bg-img-1 {
+        position: absolute;
+        top: 0;
+        left: -144px;
+    }
+
+    .speaker-section-title-flex-box {
+        padding: 0px;
+    }
+
+    .section-6-event-pricing-content-page {
+        padding: 30px 0;
+        z-index: 0;
+    }
+
+    .sponsors-page-section-7-background-color {
+        padding: 30px 0;
+    }
+
+    .previous-gallery-page-section-8 {
+        padding-bottom: 20px;
+        padding-top: 20px;
+    }
+
+    .section-8-sub-title {
+        font-size: 16px;
+        line-height: 1;
+    }
+
+    .section-8-main-title {
+        font-size: 24px;
+        line-height: 1.1;
+    }
+
+    .previous-page-gallery-page-content-title {
+        padding: 0;
+        margin-bottom: 20px;
+    }
+}

@@ -1,0 +1,939 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    font-family: "Roboto", sans-serif;
+}
+
+body {
+    width: 100%;
+    padding: 0px 0px 0px 0px;
+    margin: 0px;
+    font-family: "Roboto", sans-serif;
+}
+
+.container {
+    width: 100%;
+    max-width: 1150px;
+    padding: 0 16px;
+    margin: auto;
+}
+
+/*Nav Bar*/
+.nav {
+    width: 100%;
+    margin: 0;
+    display: flex;
+    background-color: #fff;
+    height: auto;
+    position: relative;
+    padding: 0px 20px;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 3;
+}
+
+.navigation_logo {
+    padding: 0;
+    margin: auto 0;
+    padding-top: 3px;
+    cursor: pointer;
+}
+
+.navigation_bar .main_menu li {
+    position: relative;
+}
+
+ul.main_menu {
+    width: 100%;
+    display: flex;
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+}
+
+.search_logo {
+    font-size: 17px;
+    cursor: pointer;
+    background: no-repeat;
+    border: none;
+    padding: 0px;
+    margin-right: 5px;
+}
+
+.buy_logo {
+    font-size: 17px;
+    cursor: pointer;
+    background: none;
+    border: none;
+    position: relative;
+}
+
+button.buy_ticket_now {
+    display: inline-block;
+    position: relative;
+    background-color: #fc097c;
+    border-color: transparent;
+    border-radius: 0px;
+    font-family: "Ubuntu", sans-serif;
+    box-shadow: none;
+    transition: all 0.3s ease 0s;
+    color: white;
+    font-weight: 600;
+    font-size: 14px;
+    border-style: solid;
+    cursor: pointer;
+    border: 0;
+    margin-left: 25px;
+    width: 100%;
+    max-width: 168px;
+    height: 50px;
+    padding: 0 31px;
+}
+
+.buy_ticket_now:hover {
+    background-color: #250449;
+}
+
+.buy_ticket_now::before:hover {
+    border: none;
+}
+
+.bg-bar {
+    display: none;
+}
+
+.submit_button:hover {
+    background-color: #250449;
+}
+
+.buy_ticket_now::before {
+    content: "";
+    border: 2px solid black;
+    width: calc(100% - 4px);
+    height: calc(100% - 4px);
+    position: absolute;
+    left: 0;
+    top: 0;
+    transform: translate(4px, 4px);
+    z-index: -1;
+    transition: all 0.2s linear;
+}
+
+a.d_list {
+    text-decoration: none;
+    position: relative;
+    display: flex;
+    color: black;
+    font-weight: 600;
+    font-family: "Ubuntu", sans-serif;
+    font-size: 15px;
+    padding: 27px 15px;
+}
+
+li.drop_down {
+    display: inline-block;
+}
+
+.drop_down_content {
+    display: none;
+    position: absolute;
+    background-color: #ffffff;
+    z-index: 1;
+    border-radius: 5px;
+    border-top: 4px solid #fc097c;
+    transition: all 3s linear;
+    padding: 20px 0;
+    top: 100%;
+    left: 0;
+}
+
+.drop_down_content a {
+    display: block;
+    width: 270px;
+    color: black;
+    text-decoration: none;
+    text-align: left;
+    border-radius: 5px;
+    font-weight: 600;
+    font-family: "Ubuntu", sans-serif;
+    font-size: 15px;
+    margin: auto;
+    padding: 18px 25px;
+    line-height: 0;
+}
+
+.drop_down:hover .drop_down_content {
+    display: block;
+    transition: all 0.3s linear;
+}
+
+li a:hover,
+.drop_down:hover,
+.d_list {
+    color: #fc097c;
+}
+
+.header {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+    margin: 0px;
+}
+
+.header_content {
+    position: absolute;
+    top: 139px;
+    left: 0;
+    right: 0px;
+    bottom: 0px;
+}
+
+.shape_1 {
+    position: absolute;
+    top: 0px;
+    z-index: 1;
+    right: 0;
+}
+
+img.shape_2.image-fluid {
+    position: absolute;
+    bottom: -180px;
+    left: -420px;
+    z-index: 1;
+}
+
+.header_bg_image {
+    display: block;
+}
+
+.image-fluid {
+    height: auto;
+    max-width: 100%;
+}
+
+.image_content_text h4:hover {
+    color: #ffae4a;
+}
+
+.footer_list_items:hover {
+    background-color: #fc097c;
+    transition: all 0.30s linear;
+}
+
+.page_title h1 {
+    text-align: center;
+    display: block;
+    font-family: 'Ubuntu';
+    position: relative;
+    font-weight: 700;
+    font-size: xxx-large;
+    line-height: 1.5;
+    color: white;
+    margin: 0px;
+    line-height: 1.5;
+}
+
+ol.bradcrub {
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    list-style: none;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 0px;
+}
+
+.bradcrub-items a {
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+    padding: 0 10px 0 10px;
+    cursor: pointer;
+    font-family: "Roboto";
+    font-weight: 400;
+    line-height: 1.75;
+}
+
+.page_navigation {
+    padding: 0;
+    margin: 0px;
+}
+
+.content_purpul_bg_2 {
+    position: relative;
+    padding: 0 0 110px 0;
+    background-color: #250449;
+}
+
+a.purpul_bg {
+    position: absolute;
+    padding: 0px;
+}
+
+z {
+    text-align: center;
+    width: 100%;
+    padding: 51px;
+    margin: 0px 55px 0px 55px;
+}
+
+.flex-items {
+    display: flex;
+    justify-content: center;
+}
+
+h5.title {
+    color: #ffae4a;
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 700;
+    font-family: 'Ubuntu';
+    position: relative;
+    text-align: center;
+    margin-bottom: 5px;
+    padding: 0px;
+}
+
+h2.title_2 {
+    font-size: 50px;
+    font-family: 'Ubuntu';
+    font-weight: 700;
+    padding: 0px;
+    color: white;
+    text-align: center;
+    margin: 0px;
+    width: 100%;
+    line-height: 60px;
+}
+
+.heading {
+    padding: 80px;
+}
+
+h4 {
+    padding: 0px;
+    margin: 0;
+}
+
+.footer {
+    display: flex;
+    width: 100%;
+    max-width: 1118px;
+    background: linear-gradient(to right, #341c8d, #9a00b0);
+    top: 0;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    z-index: 0;
+    padding: 62px 0 71px 0;
+    border-radius: 10px;
+}
+
+a,
+img,
+.submit_button .drop_down {
+    transition: all 0.3s linear;
+}
+
+.rows {
+    background-image: url(../images/footer_bc_img.png);
+    display: flex;
+    width: 100%;
+    height: auto;
+    position: relative;
+    z-index: 1;
+    background-size: cover;
+}
+
+p.footer_text {
+    padding: 0px;
+    margin: 0px;
+    color: white;
+    font-size: 16px;
+    font-family: 'Ubuntu';
+}
+
+.footer_text_news {
+    color: white;
+    font-size: 31px;
+    font-family: 'Ubuntu';
+    font-weight: 700;
+    margin: 30px 0 0 0;
+    padding: 0 50px 0 10px;
+    line-height: 1.5;
+}
+
+span .footer_left {
+    font-family: 'Ubuntu';
+    padding-bottom: 0px;
+}
+
+.footer_conteiner {
+    background: linear-gradient(to right, #1c0087, #9a00b0);
+    border-radius: 10px;
+    position: relative;
+    height: 264px;
+    z-index: 1;
+    margin-bottom: 132px;
+    width: 100%;
+    max-width: 930px;
+    padding-right: 171px;
+}
+
+.footer_image {
+    background-color: rgb(18 5 37 / 80%);
+}
+
+.l_footer_conteiner {
+    width: 100%;
+    padding: 0;
+    text-align: center;
+}
+
+.l_footer {
+    margin: 0 130px 0px 124px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+h4.title {
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: 600;
+    font-family: 'Ubuntu';
+}
+
+.social_title {
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.social_list {
+    margin: auto;
+}
+
+li a.footer_list_items {
+    color: white;
+    text-decoration: none;
+    border: none;
+    border-radius: 50%;
+    background: rgb(237 229 229 / 40%);
+    position: relative;
+    font-size: 25px;
+    height: 60px;
+    width: 60px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+ul.footer_social_list {
+    display: flex;
+    justify-content: center;
+    gap: 23px;
+    flex-wrap: wrap;
+    text-align: center;
+    flex-direction: row;
+    margin-bottom: 80px;
+    list-style-type: none;
+}
+
+.footer_social_list ul {
+    border: 5px solid white;
+    border-radius: 37px;
+}
+
+.footer_navigation_conteiner {
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+}
+
+a.footer_nav {
+    color: white;
+    text-decoration: none;
+    font-family: "Roboto", sans-serif;
+    list-style: none;
+    padding: 23px;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+ul.list {
+    display: flex;
+    list-style: none;
+    flex-wrap: wrap;
+    padding: 0 0 0 0px;
+    margin-bottom: 80px;
+    align-items: center;
+    justify-content: center;
+}
+
+.Last_Content {
+    color: #c4c5c7;
+    opacity: 0.6;
+    font-size: 14px;
+    font-family: 'Ubuntu';
+    text-align: center;
+    position: relative;
+    display: inline-block;
+    margin: auto;
+}
+
+.Last_Content p {
+    color: #c4c5c7;
+    text-align: center;
+    font-size: 14px;
+}
+
+.l_f_conteiner {
+    padding-top: 32px;
+    padding-bottom: 68px;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    text-align: center;
+    display: flex;
+}
+
+.footer_newsletter {
+    position: relative;
+    margin-bottom: 80px;
+}
+
+.footer_email_box {
+    width: 100%;
+    max-width: 555px;
+    padding: 0;
+}
+
+.email {
+    font-size: 15px;
+    font-weight: 400;
+    height: 60px;
+    width: 100%;
+    background-color: #fff;
+    border: none;
+    border-radius: 0;
+    padding-left: 29px;
+    cursor: pointer;
+    margin: auto;
+    color: #93a1a2;
+    padding-right: 20px;
+    outline: none;
+}
+
+.footer_text {
+    color: white;
+    font-family: 'Ubuntu';
+    text-align: left;
+    margin: auto;
+    font-size: 14px;
+}
+
+.footer_left {
+    position: relative;
+    width: 100%;
+    max-width: 388px;
+}
+
+.submit_button {
+    height: 61px;
+    width: 100%;
+    max-width: 125px;
+    background-color: #fc097c;
+    border: none;
+    color: white;
+    font-weight: 600;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.bradcrub-items a:hover {
+    color: #fc097c;
+}
+
+.image_fluid:hover {
+    margin-top: 50px;
+    transition: all 0.3s linear;
+}
+
+.image_fluid-0:hover {
+    margin-top: 10px;
+    transition: all 0.3s linear;
+}
+
+i.fa-solid.fa-angle-down {
+    margin: 4px 6px;
+}
+
+.image_fluid-0::after {
+    content: "";
+    width: 100%;
+    height: 80%;
+    position: absolute;
+    background-color: #fc097c;
+    top: 0;
+    left: 0;
+    opacity: 0.45;
+}
+
+.active_logo {
+    border: 2px solid white;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 55px;
+    right: 23px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+a.side_active_logo {
+    color: #fc097c;
+    font-size: 21px;
+}
+
+.content_background_picture {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, rgb(28 0 135 / 90%), rgb(154 0 176 / 90%));
+    padding-top: 30px;
+    position: relative;
+    z-index: 1;
+}
+
+.background_picture_color {
+    background-image: url(../images/navbg_image.jpg);
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 610px;
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+}
+
+button.buy_ticket_now:hover:before {
+    transform: translate(0, 0);
+}
+
+span.dess_arrow {
+    color: white;
+    font-size: 17px;
+    padding: 0;
+    margin: 0px;
+    line-height: 1.75;
+}
+
+img.speaker_section_bg_image {
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    width: 100%;
+}
+
+.footer_bg_color {
+    background-image: url(../images/footer_bg1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+}
+
+span#enter-user-email-address {
+    position: absolute;
+    top: 66%;
+    right: 0px;
+    left: 127px;
+    text-align: center;
+    color: red;
+}
+
+
+span.notification {
+    position: absolute;
+    background-color: deeppink;
+    width: 17px;
+    bottom: 15px;
+    left: 11px;
+    height: 17px;
+    border-radius: 20px;
+    color: white;
+    font-size: 13px;
+}
+
+input.email::placeholder {
+    color: #93a1a2;
+}
+
+.footer::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    top: 0;
+    z-index: -1;
+    position: absolute;
+    background-image: url(../images/footer_bc_img.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.nav_logo {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.footer_main {
+    padding: 100px 0;
+}
+
+.contact-form-background {
+    background-color: #def3e7;
+}
+
+h1.main-title {
+    text-decoration: underline;
+    font-size: 43px;
+    color: #188185;
+}
+
+p.sub-titles-form {
+    padding-top: 10px;
+    color: cadetblue;
+}
+
+.flex-emailbox {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.text-c {
+    width: 100%;
+    max-width: 410px;
+}
+
+.email-btn {
+    height: 100%;
+    width: 100%;
+    max-width: 116px;
+}
+
+ul,
+li {
+    list-style: none;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 700px) {
+    .nav {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+
+    .nav .navigation_logo .navigation_bar .drop_down {
+        float: left;
+    }
+}
+
+/* navigationbar responsive */
+
+
+@media only screen and (max-width: 767px) {
+    .background_picture_color {
+        overflow: unset;
+        height: 400px;
+    }
+
+    .bg-bar {
+        display: block;
+    }
+
+    .nav {
+        width: 100%;
+        padding: 0 13px;
+    }
+
+    .navigation_bar .main_menu li {
+        padding: 0;
+    }
+
+    ul.main_menu {
+        position: absolute;
+        flex-direction: column;
+        width: 100%;
+        background-color: black;
+        top: 100%;
+        left: 0;
+        right: 0px;
+        display: none;
+        z-index: 1;
+    }
+
+    button.buy_ticket_now {
+        display: none;
+    }
+
+    a.d_list {
+        width: 100%;
+        padding: 17px 20px;
+        justify-content: left;
+        text-align: left;
+        align-items: center;
+        display: flex;
+        color: white;
+    }
+
+    .bg-bar {
+        margin-left: 30px;
+        font-size: 31px;
+    }
+
+    .bg-menu-nav {
+        background: none;
+        border: none;
+        color: black;
+        font-size: 35px;
+    }
+
+    .container {
+        padding: 0 16px;
+    }
+
+    .content_background_picture {
+        padding: 0px;
+    }
+
+    .drop_down_content a {
+        margin: 0;
+        width: 100%;
+    }
+
+    .drop_down_content {
+        width: 100%;
+        position: relative;
+    }
+
+    .search_logo {
+        font-size: 22px;
+    }
+
+    .buy_logo {
+        font-size: 20px;
+    }
+
+}
+
+/* footer */
+
+@media only screen and (max-width: 767px) {
+    .footer_main {
+        padding: 35px 0 23px;
+    }
+
+    .shape_2,
+    .shape_1 {
+
+        display: none;
+    }
+
+    .footer {
+        flex-direction: column;
+        padding: 25px 16px;
+        background: linear-gradient(to right, #110734, #56185e);
+    }
+
+    .footer_text {
+        font-size: 11px;
+    }
+
+    .footer_text_news {
+        margin: 0;
+        font-size: 20px;
+        padding: 0;
+
+    }
+
+    .email {
+        font-size: 10px;
+        height: 36px;
+        padding: 8px 16px;
+    }
+
+    .submit_button {
+        height: 36px;
+        font-size: 11px;
+        padding: 8px 16px;
+    }
+
+    .flex-emailbox {
+        margin-top: 7px;
+    }
+
+    .social_title {
+        padding-bottom: 15px;
+    }
+
+    li a.footer_list_items {
+        height: 40px;
+        width: 40px;
+        font-size: 20px;
+    }
+
+    h4.title {
+        font-size: 20px;
+    }
+
+    h4.title {
+        font-size: 20px;
+    }
+
+    ul.footer_social_list {
+        gap: 19px;
+        margin-bottom: 20px;
+    }
+
+    a.footer_nav {
+        padding: 0;
+        font-size: 14px;
+    }
+
+    ul.list {
+        margin-bottom: 30px;
+        gap: 10px 20px;
+    }
+
+    .l_f_conteiner {
+        padding: 10px 0;
+    }
+
+    .Last_Content p {
+        font-size: 13px;
+    }
+
+    .footer::after {
+        content: "";
+        width: 100%;
+        height: 100%;
+        opacity: 0.9;
+    }
+
+}

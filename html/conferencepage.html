@@ -1,0 +1,736 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Exvent-Event&Conference</title>
+    <link rel="stylesheet" href="../css/conference-page.css">
+    <link rel="stylesheet" href="../css/navfoot.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&family=Roboto:ital,wght@0,400;0,500;0,700;1,400;1,700&family=Ubuntu:ital,wght@0,400;0,500;0,700;1,400;1,700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+</head>
+<body onload="">
+    <div class="conference-page-background_picture">
+        <img src="../images/conference-page-nav-header-background-image.jpg" class="ds-none" style="width: 100% ; position: absolute ; background-size: contain">
+        <img src="../images/her02.jpg" class="ds-none" style="width: 100% ; position: absolute ; background-size: contain">
+        <img src="../images/hero_bg22.jpg" class="ds-none" style="width: 100% ; position: absolute ; background-size: contain">
+        <div class="conference-page-content_background-color">
+            <div class="container">
+                <div class="conference-page-nav-section-1">
+                    <div class="navigation_logo">
+                        <img src="../images/nav-logo=2.png" alt="" />
+                    </div>
+                    <div class="conference-page-nav-navigation_bar">
+                        <ul class="conference-page-nav-navigation_bar-main_menu">
+                            <li>
+                                <ul class="main-nav-bar" id="nav_bar_btn">
+                                    <li class="conference-page-nav-navigation_bar-drop_down">
+                                        <a href="javascript:void(0)"
+                                            class="conference-page-nav-navigation_bar-drop_down-d_list"onclick="navmenuhome()">Home <span class="down_arrow"><i class="fa-solid fa-angle-down"></i></span>
+                                        </a>
+                                        <ul class="conference-page-nav-navigation_bar-drop_down-d_list-drop_down_content" id="ddlist1">
+                                            <li><a href="javascript:void(0)">Home 01</a></li>
+                                            <li><a href="javascript:void(0)">Home 02</a></li>
+                                            <li><a href="javascript:void(0)">Home 03</a></li>
+                                            <li><a href="javascript:void(0)">Home 04</a></li>
+                                            <li><a href="conferencepage.html#">Home 05</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="conference-page-nav-navigation_bar-drop_down">
+                                        <a href="javascript:void(0)"class="conference-page-nav-navigation_bar-drop_down-d_list">Aboute Us</a>
+                                    </li>
+                                    <li class="conference-page-nav-navigation_bar-drop_down">
+                                        <a href="javascript:void(0)"class="conference-page-nav-navigation_bar-drop_down-d_list"onclick="navmenupages()">Pages<span class="down_arrow"><i class="fa-solid fa-angle-down"></i></span>
+                                        </a>
+                                        <ul class="conference-page-nav-navigation_bar-drop_down-d_list-drop_down_content"
+                                            id="ddlist2">
+                                            <li><a href="#">Speaker 1</a></li>
+                                            <li><a href="javascript:void(0)">Speaker 2</a></li>
+                                            <li><a href="javascript:void(0)">Speaker 3</a></li>
+                                            <li><a href="#">Speaker Single</a></li>
+                                            <li><a href="javascript:void(0)">Event List</a></li>
+                                            <li><a href="javascript:void(0)">Event Schedule</a></li>
+                                            <li><a href="javascript:void(0)">Event Single</a></li>
+                                            <li><a href="javascript:void(0)">Login & Register </a></li>
+                                            <li><a href="javascript:void(0)">Gallery</a></li>
+                                            <li><a href="javascript:void(0)">Pricing</a></li>
+                                            <li><a href="javascript:void(0)">FQA'S</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="conference-page-nav-navigation_bar-drop_down">
+                                        <a href="javascript:void(0)"class="conference-page-nav-navigation_bar-drop_down-d_list"onclick="navmenublog()">Blog <span class="down_arrow dn2"><i class="fa-solid fa-angle-down"></i></span>
+                                        </a>
+                                        <ul class="conference-page-nav-navigation_bar-drop_down-d_list-drop_down_content"id="ddlist3">
+                                            <li><a href="../html/blog.html">Blog List</a></li>
+                                            <li><a href="../html/blogin.html">Blogs Details</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="conference-page-nav-navigation_bar-drop_down">
+                                        <a href="javascript:void(0)"class="conference-page-nav-navigation_bar-drop_down-d_list">Contact</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <ul>
+                        <li class="nav-side-btn">
+                            <div class="nav_logo">
+                                <button class="search_logo-conference-page">
+                                    <i class="fa-solid fa-magnifying-glass"></i>
+                                </button>
+                                <button class="buy_logo-conference-page">
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                    <span class="notification-conference-page">0</span>
+                                </button>
+                                <button class="buy_ticket_now-conference-nav">Buy Ticket Now</button>
+                                <ul class="bg-bar">
+                                    <li><button type="button" class="bg-menu-nav"onclick="navigationmenu()"><i class="fa-solid fa-bars"></i></button></li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="container">
+                    <div class="conference-page-header-flex-box">
+                        <div class="conference-header-page-section-2">
+                            <div class="conference-page-header-date">
+                                <span>January 20, 2023</span>
+                            </div>
+                            <div class="conference-header-page-heading-title">
+                                <h1>World Tech Conference 2023</h1>
+                            </div>
+                            <div class="conference-header-page-heading-link-list">
+                                <ul class="conference-header-page-heading-ul-vacancy-sheet">
+                                    <li class="conference-header-heading-all-sheets">
+                                        <a class="meta-link" href="#"><i class="fa-solid fa-chair"></i>2500 SEATS</a>
+                                    </li>
+                                    <li class="conference-header-heading-speaker-list">
+                                        <a class="meta-link" href="#"><i class="fa-solid fa-user"></i>20 SPEAKERS</a>
+                                    </li>
+                                    <li class="conference-header-heading-user-location">
+                                        <a class="meta-link" href="#"><i
+                                                class="fa-solid fa-location-dot"></i>BOSTON,CANADA</a>
+                                    </li>
+                                </ul>
+                                <div class="conference-page-header-lecture-conference-seat-booking-button">
+                                    <div class="conference-header-page-booking-button-flex-box">
+                                        <button class="buy_ticket_now-conference-nav">Book Now</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="page-counter-content-bg-color">
+        <div class="page-counter-section-2">
+            <div class="page-counter-content-bg-color">
+                <div class="container">
+                    <div class="counter-page-box-model">
+                        <div class="counter-page-box-inside-left">
+                            <h1 class="counter-page-box-title">Event Starting</h1>
+                            <p class="counter-page-box-subtitle">TIME REMAINING</p>
+                        </div>
+                        <div class="counter-page-box-inside-right">
+                            <div class="data-countdown 2026/04/26">
+                                <div class="counter-days">
+                                    <span class="count countdown__time-daysLeft c-ctimeday" id="count-num"></span>
+                                    <span class="value-countdown__time-daysText time-con-text">Days</span>
+                                </div>
+                                <div class="counter-days">
+                                    <span class="count countdown__time-hoursLeft c-ctimeday" id="count-num1">-</span>
+                                    <span class="value-countdown__time-hoursText time-con-text">Hours</span>
+                                </div>
+                                <div class="counter-days">
+                                    <span class="count countdown__time-minutesLeft c-ctimeday" id="count-num2"></span>
+                                    <span class="value-countdown__time-minutesText time-con-text">Minutes</span>
+                                </div>
+                                <div class="counter-days">
+                                    <span class="count countdown__time-secondsLeft c-ctimeday" id="count-num3"></span>
+                                    <span class="value-countdown__time-secondsText time-con-text">Seconds</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="page-counter-section-2.1">
+                <div class="page-counter-content-bg-png-background-img">
+                    <img class="page-counter-content-bg-png-background-img--img-number-1" src="../images/page-counter-content-bg-png-background-img.png" alt="" />
+                    <img class="page-counter-content-bg-png-background-img--img-number-2" src="../images/page-counter-content-bg-png-background-img-2.png" alt="" />
+                    <div class="container">
+                        <div class="page-counter-content-box-flex-model">
+                            <div class="page-content-flex-box-inside-text-left">
+                                <div class="page-content-body-sub-title">
+                                    <h5 class="sub-title">Join This Event</h5>
+                                </div>
+                                <div class="page-content-body-main-title">
+                                    <h2 class="main-title">Fuel your curiosity, find inspiration and discuss</h2>
+                                </div>
+                            </div>
+                            <div class="page-content--box-inside-text-right">
+                                <div class="page-content-right-side-flex-box">
+                                    <div class="counter-items">
+                                        <h1 class="counter-number-1">120</h1>
+                                        <span>Attendence</span>
+                                    </div>
+                                    <div class="counter-items">
+                                        <h1 class="counter-number-2">5</h1>
+                                        <span>WORKSHOP</span>
+                                    </div>
+                                    <div class="counter-items">
+                                        <h1 class="counter-number-3">3</h1>
+                                        <span>DAYS</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="page-about-section-3">
+            <div class="container">
+                <div class="page-about-content-section-3-flex-box">
+                    <div class="page-about-content-section-3-flex-box-container-left-side-box">
+                        <div class="container-page-about-section-3-left-side">
+                            <img class="about-page-section-3-image-1"src="../images/container-page-about-section-3-left-side-image-1.jpg" alt="" />
+                            <img class="about-page-section-3-image-2"src="../images/container-page-about-section-3-left-side-image-2.jpg" alt="" />
+                        </div>
+                    </div>
+                    <div class="page-about-content-section-3-flex-box-container-right-side-box">
+                        <div class="container-page-about-section-3-right-side">
+                            <div class="container-page-about-section-3-right-side-images">
+                                <img class="about-page-section-3-right-side-bar-image-1" src="../images/container-page-about-section-3-right-side-image-1.png" alt="" />
+                                <img class="about-page-section-3-right-side-bar-image-2" src="../images/container-page-about-section-3-right-side-image-2.png" alt="" />
+                            </div>
+                            <div class="container-page-about-section-3-right-side-about-page-title">
+                                <h5 class="sub-title">An event for</h5>
+                                <h2 class="main-title">Get curious. Be inspired. Create your future.</h2>
+                            </div>
+                            <div class="container-page-about-section-3-right-side-about-page-paragraph">
+                                <p>We’re inviting the top creatives in the tech industry from all over the world to comelearn, grow, scrape their knees, try new things, to be vulnerable, and to have epicadventures</p>
+                                <p>Grow, scrape their knees, try new things, to be vulnerable, and to have epicadventures together, this time both </p>
+                            </div>
+                            <div class="container-page-about-section-3-right-side-about-page-button">
+                                <button class="buy_ticket_now-1" id="boking-btn">Contact for booking</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="conference-page-speaker-section-4">
+            <div class="speaker-section-4-background-color">
+                <div class="speaker-section-page-content-title">
+                    <div class="speaker-section-title-flex-box">
+                        <h5 class="section-4sub-title">Speakers</h5>
+                        <h2 class="speaker-section-page-main-tatile">Iconic industry-leading speakers</h2>
+                    </div>
+                </div>
+                <div class="speaker-section-4-page-content-user-images">
+                    <div class="speaker-section-4page-content-images-flex-box">
+                        <div class="section-4-images-row-col">
+                            <a class="speaker-section-4-images-links" href="">
+                                <div class="section-4-single-speaker">
+                                    <div class="section-4-speaker-content-image1">
+                                        <img class="section-4-img-w" src="../images/section-4-speaker-content-image1.jpg" alt="" />
+                                    </div>
+                                    <div class="section-4-speaker-content-text">
+                                        <h4>Mike Fermalin</h4>
+                                        <span>Career Expert</span>n
+                                    </div>
+                                    <div class="section-4-speaker-content-image-shape">
+                                        <img src="../images/section-4-speaker-content-image-shape.png">
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="section-4-images-row-col">
+                            <a class="speaker-section-4-images-links" href="">
+                                <div class="section-4-single-speaker">
+                                    <div class="section-4-speaker-content-image2">
+                                        <img class="section-4-img-w" src="../images/section-4-speaker-content-image2.jpg" alt="" />
+                                    </div>
+                                    <div class="section-4-speaker-content-text">
+                                        <h4>Anna Blair</h4>
+                                        <span>Founder,Marks</span>n
+                                    </div>
+                                    <div class="section-4-speaker-content-image-shape">
+                                        <img src="../images/section-4-speaker-content-image-shape.png">
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="section-4-images-row-col">
+                            <a class="speaker-section-4-images-links" href="">
+                                <div class="section-4-single-speaker">
+                                    <div class="section-4-speaker-content-image3">
+                                        <img class="section-4-img-w" src="../images/section-4-speaker-content-image3.jpg" alt="" />
+                                    </div>
+                                    <div class="section-4-speaker-content-text">
+                                        <h4>Trevor J. Bell</h4>
+                                        <span>Lead trainer,Blids</span>n
+                                    </div>
+                                    <div class="section-4-speaker-content-image-shape">
+                                        <img src="../images/section-4-speaker-content-image-shape.png">
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="section-4-images-row-col">
+                            <a class="speaker-section-4-images-links" href="">
+                                <div class="section-4-single-speaker">
+                                    <div class="section-4-speaker-content-image4">
+                                        <img class="section-4-img-w" src="../images/section-4-speaker-content-image4.jpg" alt="" />
+                                    </div>
+                                    <div class="section-4-speaker-content-text">
+                                        <h4>Michael Rooker</h4>
+                                        <span>Developer Expert</span>n
+                                    </div>
+                                    <div class="section-4-speaker-content-image-shape">
+                                        <img src="../images/section-4-speaker-content-image-shape.png">
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="section-4-images-row-col">
+                            <a class="speaker-section-4-images-links" href="">
+                                <div class="section-4-single-speaker">
+                                    <div class="section-4-speaker-content-image5">
+                                        <img class="section-4-img-w" src="../images/section-4-speaker-content-image5.jpg" alt="" />
+                                    </div>
+                                    <div class="section-4-speaker-content-text">
+                                        <h4>David B.Perez</h4>
+                                        <span>Founder Madis</span>n
+                                    </div>
+                                    <div class="section-4-speaker-content-image-shape">
+                                        <img src="../images/section-4-speaker-content-image-shape.png">
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="section-4-images-row-col">
+                            <a class="speaker-section-4-images-links" href="">
+                                <div class="section-4-single-speaker">
+                                    <div class="section-4-speaker-content-image6">
+                                        <img class="section-4-img-w" src="../images/section-4-speaker-content-image6.jpg" alt="" />
+                                    </div>
+                                    <div class="section-4-speaker-content-text">
+                                        <h4>Agustin Todaro</h4>
+                                        <span>Founder nickho</span>n
+                                    </div>
+                                    <div class="section-4-speaker-content-image-shape">
+                                        <img src="../images/section-4-speaker-content-image-shape.png">
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="section-4-images-row-col">
+                            <a class="speaker-section-4-images-links" href="">
+                                <div class="section-4-single-speaker">
+                                    <div class="section-4-speaker-content-image7">
+                                        <img class="section-4-img-w" src="../images/section-4-speaker-content-image7.jpg" alt="" />
+                                    </div>
+                                    <div class="section-4-speaker-content-text">
+                                        <h4>Trisha Fisher</h4>
+                                        <span>President, Child Care</span>n
+                                    </div>
+                                    <div class="section-4-speaker-content-image-shape">
+                                        <img src="../images/section-4-speaker-content-image-shape.png">
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="section-4-images-row-col">
+                            <a class="speaker-section-4-images-links" href="">
+                                <div class="section-4-single-speaker">
+                                    <div class="section-4-speaker-content-image8">
+                                        <img class="section-4-img-w" src="../images/section-4-speaker-content-image8.jpg" alt="" />
+                                    </div>
+                                    <div class="section-4-speaker-content-text">
+                                        <h4>Jon p. Monroe</h4>
+                                        <span>traveller</span>n
+                                    </div>
+                                    <div class="section-4-speaker-content-image-shape">
+                                        <img src="../images/section-4-speaker-content-image-shape.png">
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="conference-Schedule-page-content-section-5">
+            <div class="conference-page-section-5-background-image">
+                <img class="section-5-bg-img-1" src="../images/conference-page-section-5-background-image-01.png"alt="" />
+                <img class="section-5-bg-img-2" src="../images/conference-page-section-5-background-image-02.png"alt="" />
+            </div>
+            <div class="container">
+                <div class="conference-Schedule-page-content-title">
+                    <div class="conference-page-section-5-title-flex-box">
+                        <h5 class="sub-title">Schedule</h5>
+                        <h2 class="main-title">Without waiting for you to catch up</h2>
+                    </div>
+                </div>
+                <div class="section-5-Schedule-content-form">
+                    <div class="section-5-schedule-content-form-left-side">
+                        <div class="Schedule-form-left-side-content">
+                            <p class="nav-link-1">1st Day</p>
+                            <p class="nav-link-2">2nd Day</p>
+                            <p class="nav-link-3">3rd Day</p>
+                        </div>
+                    </div>
+                    <div class="section-5-schedule-content-form-right-side">
+                        <div class="user-option-submit">
+                            <div class="section-5-user-form-1 registration-for-workshop">
+                                <div class="section-5-user-form-left-side-profile">
+                                    <div class="section-5-date_tool">
+                                        <h3 class="section-5-h3_date">12</h3>
+                                        <div class="section-5-date_time">
+                                            <span>August</span>
+                                            <p class="today-date" id="date">09:00 - 11:00 AM</p>
+                                        </div>
+                                    </div>
+                                    <img src="../images/bottom_events_pic.png" class="section-5img_events" alt="" />
+                                </div>
+                                <div class="section-5-user-form-1-right-side-profile">
+                                    <div class="section-5-user-form-location">
+                                        <i id="icons" class="fa-solid fa-location-dot"></i>
+                                        <span>Monthon city hall, New York</span>
+                                    </div>
+                                    <div class="section-5-user-form-text-content">
+                                        <h4 class="section-5-user-form-text-content-title">Registration for opening
+                                            workshop</h4>
+                                        <p>We're inviting the top creatives in the tech industry from all over the worldto come learn, grow, scrape their knees, try new things, to be vulnerable,
+                                        </p>
+                                        <p class="p2" id="alert01" style="display: block">epic adventures Meh synthSchlitz, tempor duis single-origin coffee ea next level ethnic fingerstache fanny pack nostrud. Photo booth anim 8-bit hella, PBR 3 wolf moon beard Helvetica. Salvia esse flexitarian Truffaut synth art party deep v chillwave.</p>
+                                    </div>
+                                    <div class="icon-minus">
+                                        <a href="javascript:void(0)" onclick="Registrationforworkshop()"
+                                            class="car-minus registration-for-workshop-btn">
+                                            <i class="fa-solid fa-minus"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="section-5-user-form-1 meeting-with-investors">
+                                <div class="section-5-user-form-left-side-profile">
+                                    <div class="section-5-date_tool">
+                                        <h3 class="section-5-h3_date">12</h3>
+                                        <div class="section-5-date_time">
+                                            <span>August</span>
+                                            <p class="today-date-1" id="date">09:00 - 11:00 AM</p>
+                                        </div>
+                                    </div>
+                                    <img src="../images/bottom_events_pic2.png" class="section-5img_events" alt="" />
+                                </div>
+                                <div class="section-5-user-form-1-right-side-profile">
+                                    <div class="section-5-user-form-location">
+                                        <i id="icons-2" class="fa-solid fa-location-dot"></i>
+                                        <span>Monthon city hall, New York</span>
+                                    </div>
+                                    <div class="section-5-user-form-text-content">
+                                        <h4 class="section-5-user-form-text-content-title">Meeting with world-class investors</h4>
+                                     to come learn, grow, scrape their knees, try new things, to be vulnerable,
+                                        </p>
+                                     chillwave.</p>
+                                    </div>
+                                    <div class="icon-plus">
+                                        <a type="button" onclick="Meetingwithinvestors()"
+                                            class="car-plus meeting-with-investors-btn">
+                                            <i class="fa-solid fa-plus"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="section-5-user-form-1 discussion-about-meetings">
+                                <div class="section-5-user-form-left-side-profile">
+                                    <div class="section-5-date_tool">
+                                        <h3 class="section-5-h3_date">12</h3>
+                                        <div class="section-5-date_time">
+                                            <span>August</span>
+                                            <p class="today-date-2" id="date">09:00 - 11:00 AM</p>
+                                        </div>
+                                    </div>
+                                    <img src="../images/bottom_events_pic3.png" class="section-5img_events" alt="" />
+                                </div>
+                                <div class="section-5-user-form-1-right-side-profile">
+                                    <div class="section-5-user-form-location">
+                                        <i id="icons-3" class="fa-solid fa-location-dot"></i>
+                                        <span>Monthon city hall, New York</span>
+                                    </div>
+                                    <div class="section-5-user-form-text-content">
+                                        <h4 class="section-5-user-form-text-content-title">Discussion about benefits of online meetings</h4>
+                                        <p>We're inviting the top creatives in the tech industry from all over the world to come learn, grow, scrape their knees, try new things, to be vulnerable,
+                                        </p>
+                                        <p class="p2" id="alert03" style="display: none">epic adventures Meh synth Schlitz, tempor duis single-origin coffee ea next level ethnic fingerstache fanny pack nostrud. Photo booth anim 8-bit hella, PBR 3 wolf moon beard Helvetica. Salvia esse flexitarian Truffaut synth art party deep v chillwave.</p>
+                                    </div>
+                                    <div class="icon-plus">
+                                        <a type="button" onclick="Discussionmeetings()"
+                                            class="car-plus discussion-about-meetings-btn">
+                                            <i class="fa-solid fa-plus"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section-6-event-pricing-booking-chart">
+            <div class="section-6-event-pricing-background-image">
+                <div class="section-6-event-pricing-background-color">
+                    <div class="container">
+                        <div class="section-6-event-pricing-content-page">
+                            <div class="section-6-event-pricing-title-flex-box">
+                                <div class="section-6-event-pricing-content-title">
+                                    <h5 class="section-6-sub-title">Event Pricing</h5>
+                                    <h2 class="section-6-main-title">Book your seat now</h2>
+                                </div>
+                            </div>
+                            <div class="section-6-event-pricing-pass-form">
+                                <div class="section-6-pass-form-flex-box">
+                                    <div class="section-6-pass-form-model">
+                                        <div class="section-6-pass-price-header">
+                                            <span class="section-6-pass-plans">Basic Pass</span>
+                                            <h3 class="section-6-pass-plan-amount"><sup>$</sup>43</h3>
+                                        </div>
+                                        <div class="section-6-pass-price-body">
+                                            <ul class="section-6-price-body-content">
+                                                <li>Back Row Seat</li>
+                                                <li>Free Lunch & Snacks</li>
+                                                <li>Event Certificate</li>
+                                                <li>1 Workshop</li>
+                                            </ul>
+                                        </div>
+                                        <div class="section-6-pass-price-footer">
+                                            <button class="buy_seat_ticket_now btn-danger">Book A Seat</button>
+                                        </div>
+                                    </div>
+                                    <div class="section-6-pass-form-model">
+                                        <div class="section-6-pass-price-header-1">
+                                            <span class="section-6-pass-plans">Premium Pass</span>
+                                            <h3 class="section-6-pass-plan-amount"><sup>$</sup>143</h3>
+                                        </div>
+                                        <div class="section-6-pass-price-body">
+                                            <ul class="section-6-price-body-content">
+                                                <li>Back Row Seat</li>
+                                                <li>Free Lunch & Snacks</li>
+                                                <li>Event Certificate</li>
+                                                <li>1 Workshop</li>
+                                            </ul>
+                                        </div>
+                                        <div class="section-6-pass-price-footer">
+                                            <button class="buy_seat_ticket_now-1 btn-danger">Book A Seat</button>
+                                        </div>
+                                    </div>
+                                    <div class="section-6-pass-form-model">
+                                        <div class="section-6-pass-price-header-2">
+                                            <span class="section-6-pass-plans">Platinum Pass</span>
+                                            <h3 class="section-6-pass-plan-amount"><sup>$</sup>243</h3>
+                                        </div>
+                                        <div class="section-6-pass-price-body">
+                                            <ul class="section-6-price-body-content">
+                                                <li>Back Row Seat</li>
+                                                <li>Free Lunch & Snacks</li>
+                                                <li>Event Certificate</li>
+                                                <li>1 Workshop</li>
+                                            </ul>
+                                        </div>
+                                        <div class="section-6-pass-price-footer">
+                                            <button class="buy_seat_ticket_now-2  btn-danger">Book A Seat</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="sponsors-page-section-7">
+            <div class="sponsors-page-section-7-background-color">
+                <div class="container">
+                    <div class="sponsors-page-content-title-flex-box">
+                        <div class="sponsors-page-content-title">
+                            <h5 class="sponsors-sub-title">Sponsors</h5>
+                            <h2 class="sponsors-main-title">50+ leading companies with us</h2>
+                        </div>
+                    </div>
+                    <div class="sponsors-companies-section-7">
+                        <div class="section-7-sponsors-leading-companies-images">
+                            <div class="sponsors-companies-leading-images-flex-box">
+                                <div class="leading-company-images">
+                                    <a href="javascript:void(0)" class="section-7-img-1">
+                                        <img src="../images/section-7-img-1.png" alt="" />
+                                    </a>
+                                    <a href="javascript:void(0)" class="section-7-img-1">
+                                        <img src="../images/section-7-img-2.png" alt="" />
+                                    </a>
+                                    <a href="javascript:void(0)" class="section-7-img-1">
+                                        <img src="../images/section-7-img-3.png" alt="" />
+                                    </a>
+                                    <a href="javascript:void(0)" class="section-7-img-1">
+                                        <img src="../images/section-7-img-4.png" alt="" />
+                                    </a>
+                                    <a href="javascript:void(0)" class="section-7-img-1">
+                                        <img src="../images/section-7-img-5.png" alt="" />
+                                    </a>
+                                    <a href="javascript:void(0)" class="section-7-img-1">
+                                        <img src="../images/section-7-img-6.png" alt="" />
+                                    </a>
+                                    <a href="javascript:void(0)" class="section-7-img-1">
+                                        <img src="../images/section-7-img-7.png" alt="" />
+                                    </a>
+                                    <a href="javascript:void(0)" class="section-7-img-1">
+                                        <img src="../images/section-7-img-8.png" alt="" />
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="previous-gallery-page-section-8">
+            <div class="previous-gallery-page-content">
+                <div class="container">
+                    <div class="previous-page-gallery-page-content-title">
+                        <div class="section-title-flex-box">
+                            <div class="section-8-title">
+                                <h5 class="section-8-sub-title">Previous Gallery</h5>
+                                <h2 class="section-8-main-title">Past event memories</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="previous-gallery-page-image-content">
+                        <div class="section-8-images-row-col">
+                            <div class="section-8-gallery-images-page">
+                                <a href="javascript:void(0)" class="section-8-images-single-gallery">
+                                    <img src="../images/section-8-images-single-gallery.jpg" alt="Gallery"class="section-8-img-mai" />
+                                </a>
+                                <div class="section-8-gallery-content">
+                                    <span>Aug</span>
+                                    <h5>2018</h5>
+                                </div>
+                            </div>
+                            <div class="section-8-gallery-images-page">
+                                <a href="javascript:void(0)" class="section-8-images-single-gallery">
+                                    <img src="../images/section-8-images-single-gallery-2.jpg" alt="Gallery"class="section-8-img-mai" />
+                                </a>
+                                <div class="section-8-gallery-content">
+                                    <span>Jun</span>
+                                    <h5>2019</h5>
+                                </div>
+                            </div>
+                            <div class="section-8-gallery-images-page">
+                                <a href="javascript:void(0)" class="section-8-images-single-gallery">
+                                    <img src="../images/section-8-images-single-gallery-3.jpg" alt="Gallery"class="section-8-img-mai" />
+                                </a>
+                                <div class="section-8-gallery-content">
+                                    <span>Sep</span>
+                                    <h5>2020</h5>
+                                </div>
+                            </div>
+                            <div class="section-8-gallery-images-page">
+                                <a href="javascript:void(0)" class="section-8-images-single-gallery">
+                                    <img src="../images/section-8-images-single-gallery-4.jpg" alt="Gallery"class="section-8-img-mai" />
+                                </a>
+                                <div class="section-8-gallery-content">
+                                    <span>May</span>
+                                    <h5>2021</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer_bg_image">
+            <div class="footer_bg_color">
+                <div class="footer_image">
+                    <div class="footer_main">
+                        <div class="container">
+                            <div class="footer">
+                                <div class="footer_left">
+                                    <span class="footer_text">Subcribe Newslatter</span>
+                                    <p class="footer_text_news">Subcribe to recieve daily news</p>
+                                </div>
+                                <div class="footer_email_box">
+                                    <div class="flex-emailbox">
+                                        <div class="text-c">
+                                            <label class="ftbox">
+                                                <input type="text" class="email" id="subscribe-email1"
+                                                    placeholder="Your Email" required>
+                                            </label>
+                                        </div>
+                                        <div class="email-btn">
+                                            <button class="submit_button" id="subscribe-email"
+                                                onclick="footer()">Subscribe</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <span id="enter-user-email-address"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <div class=" l_footer_conteiner">
+                            <div class="l_fotter">
+                                <div class="social_title">
+                                    <h4 class="title">Contact With Us</h4>
+                                </div>
+                                <div class="social_list">
+                                    <ul class="footer_social_list">
+                                        <li><a href="#" class="footer_list_items"><i
+                                                    class="fa-brands fa-facebook-f"></i></a></li>
+                                        <li><a href="javascript:void(0)" class="footer_list_items"><i
+                                                    class="fa-brands fa-twitter"></i></a></li>
+                                        <li><a href="javascript:void(0)" class="footer_list_items"><i
+                                                    class="fa-solid fa-basketball"></i></a></li>
+                                        <li><a href="javascript:void(0)" class="footer_list_items"><i
+                                                    class="fa-brands fa-behance"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="footer_navigation_conteiner">
+                            <div class="footer_navigation">
+                                <div class="footer_navigation_content">
+                                    <ul class="list">
+                                        <li><a href="javascript:void(0)" class="footer_nav">Home</a></li>
+                                        <li><a href="javascript:void(0)" class="footer_nav">About Us</a></li>
+                                        <li><a href="javascript:void(0)" class="footer_nav">Sponsors</a></li>
+                                        <li><a href="javascript:void(0)" class="footer_nav">schedule</a></li>
+                                        <li><a href="javascript:void(0)" class="footer_nav">blog</a></li>
+                                        <li><a href="javascript:void(0)" class="footer_nav">Contact</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="l_f_conteiner">
+                            <div class="Last_Content">
+                                <p>2023 Copyright Expotin Designed by Love . All Rights Reserved</p>
+                            </div>
+                        </div>
+                        <div class="active_logo">
+                            <a class="side_active_logo" onclick="topFunction()" id="my-button"
+                                href="javascript:void(0)"><i class="fa-solid fa-arrow-up"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../javascript/script.js"></script>
+</body>
+
+</htmljavascript:void(0)
