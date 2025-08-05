@@ -64,7 +64,6 @@ ul {
     justify-content: space-between;
     margin: 0px;
     padding: 0px;
-    width: 100%;
 }
 
 .nav_buttons {
@@ -461,6 +460,10 @@ a.nav_search_logo_link:hover {
     .nav_list_items.open>.drop_down {
         display: block;
         /* Show on click */
+    }
+
+    .navigation_logo {
+        width: 100%;
     }
 }
 
